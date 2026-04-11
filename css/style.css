@@ -131,6 +131,49 @@ body {
   letter-spacing: 0.1em;
 }
 
+.cover-credits-mount {
+  margin-top: 28px;
+}
+
+/* 封面与结果页共用的底部署名（低对比、小字号） */
+.page-credits {
+  max-width: 300px;
+  margin: 0 auto;
+  padding-top: 18px;
+  border-top: 1px solid #e6dfcd;
+  text-align: center;
+}
+
+.page-credits p {
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', serif;
+  font-size: 11px;
+  line-height: 1.75;
+  color: #b0a48f;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.page-credits p:last-child {
+  margin-bottom: 0;
+}
+
+.page-credits a {
+  color: #8a7d6a;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.page-credits a:hover {
+  color: #4a4338;
+}
+
+.page-credits .page-credits-maint {
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
 /* ============ QUIZ ============ */
 .quiz {
   padding: 24px 28px 60px;
@@ -574,11 +617,17 @@ body {
 
 .brand-foot {
   margin-top: 32px;
+  margin-bottom: 8px;
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 11px;
   color: #a59886;
   letter-spacing: 0.2em;
+}
+
+.footer .page-credits {
+  margin-top: 8px;
+  padding-top: 20px;
 }
 
 .ornament-mid {

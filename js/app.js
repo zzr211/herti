@@ -2,6 +2,17 @@ let currentQ = 0;
 let answers = new Array(20).fill(null);
 let userVec = [0, 0, 0, 0, 0];
 
+/** 封面底部与结果页底部共用：答题与加载中不出现，以免打断沉浸感 */
+function getPageCreditsHtml() {
+  const xhs = 'https://www.xiaohongshu.com/user/profile/607e40270000000001001849';
+  return `
+    <div class="page-credits">
+      <p>题目与呈现源自 <a href="https://herti.us/" target="_blank" rel="noopener noreferrer">herti.us</a>，版权归原作者与原作站点；本站为个人学习归档之副本。</p>
+      <p class="page-credits-maint">维护 · <a href="https://space.bilibili.com/435242714" target="_blank" rel="noopener noreferrer" title="哔哩哔哩">哔哩哔哩 · 清心寡欲哆啦道人</a> · <a href="${xhs}" target="_blank" rel="noopener noreferrer" title="小红书">小红书 · Dreammaker</a> · 公众号「千秋万事」 · <a href="https://sbtihub.pages.dev/" target="_blank" rel="noopener noreferrer" title="书签与导航">sbtihub.pages.dev</a></p>
+    </div>
+  `;
+}
+
 function startQuiz() {
   currentQ = 0;
   answers = new Array(20).fill(null);
@@ -200,6 +211,7 @@ function renderResult(r) {
         <em>你心里那一位,也许我还没遇见。<br>评论告诉我,下一版我去把她找出来。</em>
       </p>
       <div class="brand-foot">HERTI · 她的人格地图</div>
+      ${getPageCreditsHtml()}
     </div>
   `;
 
@@ -212,3 +224,8 @@ function restart() {
   document.getElementById('cover').style.display = 'flex';
   window.scrollTo(0, 0);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mount = document.getElementById('coverCreditsMount');
+  if (mount) mount.innerHTML = getPageCreditsHtml();
+});
