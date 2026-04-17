@@ -42,7 +42,7 @@ function getPageCreditsHtml() {
   const maint = t("ui.credits.maint");
   return `
     <div class="page-credits">
-      <p class="page-credits-maint">${maint} · <a href="https://qqwsh.top" target="_blank" rel="noopener noreferrer" title="主站">qqwsh.top</a> · <a href="https://tihub.qqwsh.top" target="_blank" rel="noopener noreferrer" title="导航站">tihub.qqwsh.top</a> · <a href="https://x.com/ying_zhiwei" target="_blank" rel="noopener noreferrer" title="X / Twitter">推特 · 嬴知微 @ying_zhiwei</a></p>
+      <p class="page-credits-maint">${maint} · <a href="https://qqwsh.top" target="_blank" rel="noopener noreferrer" title="主站">qqwsh.top</a> · <a href="https://tihub.qqwsh.top" target="_blank" rel="noopener noreferrer" title="导航站">tihub.qqwsh.top</a> · <a href="https://x.com/ying_zhiwei" target="_blank" rel="noopener noreferrer" title="X / Twitter">X · 嬴知微 @ying_zhiwei</a></p>
     </div>
   `;
 }
