@@ -1,4 +1,4 @@
-const HERTI_SUPPORTED_LOCALES = ["zh-Hans", "en", "ja", "ko"];
+const HERTI_SUPPORTED_LOCALES = ["zh-Hans", "en", "ja", "ko", "ru", "fr", "es"];
 const HERTI_LOCALE_STORAGE_KEY = "herti-locale";
 
 let hertiCurrentLocale = "zh-Hans";
@@ -14,6 +14,9 @@ function hertiNormalizeLocale(input) {
   if (lower.startsWith("en")) return "en";
   if (lower.startsWith("ja")) return "ja";
   if (lower.startsWith("ko")) return "ko";
+  if (lower.startsWith("ru")) return "ru";
+  if (lower.startsWith("fr")) return "fr";
+  if (lower.startsWith("es")) return "es";
   return null;
 }
 
@@ -54,6 +57,9 @@ function hertiSetDomLanguage(localeCode) {
     en: "en",
     ja: "ja",
     ko: "ko",
+    ru: "ru",
+    fr: "fr",
+    es: "es",
   };
   document.documentElement.lang = map[localeCode] || "zh-CN";
 }

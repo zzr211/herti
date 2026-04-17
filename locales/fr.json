@@ -1,0 +1,663 @@
+{
+  "ui": {
+    "langLabel": "Langue",
+    "languages": [
+      {
+        "code": "zh-Hans",
+        "label": "中文"
+      },
+      {
+        "code": "en",
+        "label": "English"
+      },
+      {
+        "code": "ja",
+        "label": "日本語"
+      },
+      {
+        "code": "ko",
+        "label": "한국어"
+      },
+      {
+        "code": "ru",
+        "label": "Russe"
+      },
+      {
+        "code": "fr",
+        "label": "Français"
+      },
+      {
+        "code": "es",
+        "label": "Espagnol"
+      }
+    ],
+    "title": "HERTI · Sa carte de personnalité",
+    "cover": {
+      "sub": "— une cartographie littéraire de la personnalité —",
+      "cnTitle": "C A R T E   D E   S A   P E R S O N N A L I T É",
+      "tagline": [
+        "L’histoire les a cachées,",
+        "mais dans ton âme, un fragment",
+        "vibre à sa fréquence."
+      ],
+      "meta": "16 femmes · 20 questions · environ 5 min",
+      "start": "COMMENCER LE TEST",
+      "hint": "À ouvrir dans un moment de calme"
+    },
+    "quiz": {
+      "questionPrefix": "Question ",
+      "back": "← Précédent",
+      "footer": "HERTI"
+    },
+    "loading": {
+      "text": [
+        "Nous cherchons celle",
+        "qui résonne avec toi..."
+      ]
+    },
+    "result": {
+      "heroLabel": "Ton type de personnalité",
+      "sectionLabel": "Persona",
+      "soulLabel": "Origine de l’âme",
+      "mirrorLabel": "ton miroir",
+      "oppositeLabel": "ton opposé",
+      "footerQuote": [
+        "L’histoire les a cachées,",
+        "mais dans ton âme, un fragment",
+        "vibre à sa fréquence."
+      ],
+      "shareHint": [
+        "Partage ta carte de personnalité,",
+        "et laisse une autre elle",
+        "te rencontrer dans ton fil."
+      ],
+      "restart": "RECOMMENCER",
+      "nominate": [
+        "Elles sont seize.",
+        "Mais en vérité, bien plus nombreuses."
+      ],
+      "nominateEm": [
+        "Celle que tu portes en toi n’est peut-être pas encore ici.",
+        "Dis-le-moi, je la chercherai dans la prochaine édition."
+      ],
+      "brandFoot": "HERTI · Sa carte de personnalité"
+    },
+    "credits": {
+      "source": "Le titre et la présentation proviennent de herti.us, et les droits d'auteur appartiennent à l'auteur original et au site original ; ce site est une copie d'une archive d'étude personnelle.",
+      "maint": "Maintenance"
+    }
+  },
+  "personas": {
+    "WAVE": {
+      "cn": "vague",
+      "enName": "Virginia Woolf",
+      "cnName": "弗吉尼亚·伍尔夫",
+      "source": "d’après Les Vagues, 1931",
+      "epigraph": "\"J'ai besoin d'une chambre à moi,<br>et le droit de ne pas être dérangée par personne. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui préfère manger seule plutôt que de discuter avec quelqu'un que vous ne voulez pas voir. Il existe en vous un univers complet qui n’a besoin d’être vérifié par personne.",
+        "Vous avez l'air calme, mais vous n'êtes pas docile. Vous utilisez simplement toute votre énergie pour garder cette pièce – ne laissez pas les sons extérieurs entrer, ne laissez pas les attentes des autres entrer, ne laissez aucun « vous devriez » entrer.",
+        "Votre plus grande peur n’est pas d’être seul, mais d’être interrompu."
+      ],
+      "tags": [
+        "Privilégiez la solitude",
+        "univers intérieur",
+        "Fort sens des limites",
+        "L'amour profond est rare"
+      ],
+      "soul": [
+        "En 1929, elle écrit « A Room of One's Own » et dit à toutes les femmes :<strong>Vous avez besoin d’argent et d’une chambre à vous pour écrire et être vous-même.</strong>",
+        "Elle a écrit \"Waves\" - un monologue à six voix alternativement sur la plage, comme la montée et la descente de la marée, comme la structure même de la conscience.",
+        "En mars 1941, elle remplit ses poches de pierres et entra dans la rivière Ouse. Elle est WAVE. Elle est la vague. Elle est toute femme qui a besoin d’une chambre à elle pour survivre."
+      ]
+    },
+    "DESO": {
+      "cn": "Sagesse précoce",
+      "enName": "Eileen Chang",
+      "cnName": "张爱玲",
+      "source": "\"Il faut devenir célèbre tôt.\" —Zhang Ailing, 1944",
+      "epigraph": "\"Il faut être célèbre très tôt.<br>Si tu viens trop tard,<br>Le bonheur n’est pas si agréable non plus. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui découvre le monde des adultes dès son plus jeune âge. À l’âge où d’autres croient encore aux contes de fées, vous savez déjà écrire les quatre mots « criblé de trous ».",
+        "Votre tendresse est froide, votre sobriété est solitaire. Vous êtes très doué pour juger les gens, mais vous ne les signalez jamais - parce que vous savez depuis longtemps qu'il y a des choses qu'il est inutile de dire.",
+        "Votre plus grande grâce est de ne jamais expliquer. Votre plus grande tristesse est que personne n’a besoin de vous pour expliquer."
+      ],
+      "tags": [
+        "regarde avec les yeux froids",
+        "aliénation décente",
+        "Déjà compris",
+        "se retourner gracieusement"
+      ],
+      "soul": [
+        "Zhang Ailing est devenue célèbre à Shanghai à l'âge de 23 ans. Elle a écrit \"<strong>Soyez célèbre tôt</strong>\"A cette époque, elle n'avait que 23 ans, mais chaque phrase qu'elle écrivait semblait avoir été écrite par une personne de 60 ans.",
+        "Elle a quitté la Chine à l'âge de 28 ans et est décédée seule dans son appartement de Los Angeles à l'âge de 75 ans. Lorsqu'elle a été découverte, elle n'était entourée que des phrases qu'elle avait écrites.",
+        "\"<strong>Parce que nous comprenons, nous sommes compatissants.</strong>\"——Ces huit mots sont le résumé de tous ses sentiments. Elle ne pleure jamais, elle voit tout à travers, l'écrit, puis continue de manger.",
+        "Elle est DESO. Elle est précoce, le genre de fille qui peut voir clairement son père, sa belle-mère et le monde entier à l'âge de sept ans. La sagesse précoce est une malédiction : elle vous fait en savoir beaucoup plus que vos pairs, et elle vous rend également bien plus seule que vos pairs. Mais vous ne vous plaignez pas, vous écrivez simplement à ce sujet."
+      ]
+    },
+    "PRID": {
+      "cn": "arrogant",
+      "enName": "Jane Austen",
+      "cnName": "简·奥斯汀",
+      "source": "d’après Orgueil et Préjugés, 1813",
+      "epigraph": "\"Tout célibataire riche,<br>Tout le monde doit vouloir épouser une femme. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui voit à travers tout le monde dans une pièce où tout le monde agit mais ne les expose pas. Votre arme n'est pas la colère, c'est l'ironie.",
+        "Vous croyez fermement qu '«une fin heureuse en vaut la peine», mais votre fin heureuse doit être établie une fois que vous avez tout vu clairement.",
+        "Vous êtes doux, mais vous n’êtes en aucun cas naïf. Vous êtes romantique, mais vous n'êtes jamais confus."
+      ],
+      "tags": [
+        "sarcasme froid",
+        "romance sobre",
+        "ordre et tact",
+        "la dignité du célibat"
+      ],
+      "soul": [
+        "Austen ne s'est jamais mariée et a écrit « Orgueil et Préjugés », « Raison et Sentiments » et « Emma » dans un petit salon de la campagne du Hampshire.",
+        "Elle n'a jamais écrit sur les guerres, jamais sur les colonies, elle n'a écrit que sur les salons, les bals et les hommes qui se croyaient intelligents - et puis<strong>Utiliser l’ironie pour décortiquer l’ensemble du marché matrimonial patriarcal</strong>.",
+        "Elle a vécu 41 ans et a laissé derrière elle 6 romans, réécrivant les possibilités de toute écriture féminine ultérieure. Elle est PRID. Elle est arrogante – une arrogance sobre, intellectuelle et inflexible."
+      ]
+    },
+    "BLUE": {
+      "cn": "l'oeil le plus bleu",
+      "enName": "Toni Morrison",
+      "cnName": "托妮·莫里森",
+      "source": "de L'œil le plus bleu, 1970",
+      "epigraph": "\"Si une personne désire être quelqu'un d'autre,<br>Puis elle a été volée. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui se souvient toujours \"il y a quelqu'un qui n'a pas été entendu\". Votre pouvoir n'est pas de vous battre pour vous-même, mais de transformer ceux qui n'ont pas de voix en personnes qui en ont une.",
+        "Vous êtes doux, mais votre douceur a du poids. Vous êtes prêt à vous arrêter pour les autres, mais vous ne démissionnez jamais.",
+        "Vous pensez : Raconter une histoire peut parfois vraiment changer le monde."
+      ],
+      "tags": [
+        "Les autres ont la priorité",
+        "tendresse épique",
+        "Donner la parole aux sans-voix",
+        "les gens qui se souviennent"
+      ],
+      "soul": [
+        "Toni Morrison est la première femme afro-américaine à remporter le prix Nobel de littérature. Elle écrit avec un seul objectif :<strong>Placer les âmes des femmes noires dont « on n’a jamais écrit » au centre de la littérature.</strong>",
+        "Elle a dit un jour : « Si vous voulez lire un livre, mais que ce livre n'a pas été écrit, alors vous devez l'écrire. »",
+        "Elle n'écrit pas pour elle-même. Elle est BLEUE. Elle a les yeux les plus bleus - toutes ces filles à qui on a dit \"tu n'es pas assez\" peuvent trouver leur chemin en elle."
+      ]
+    },
+    "RAVI": {
+      "cn": "calamité",
+      "enName": "Marguerite Duras",
+      "cnName": "玛格丽特·杜拉斯",
+      "source": "du Ravissement de Lol V. Stein, 1964",
+      "epigraph": "\"Par rapport à ton visage quand tu étais jeune,<br>J'aime encore plus ton visage meurtri maintenant. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui mélange désir, humidité, douleur et mémoire. Votre amour n'est pas doux, il est dévorant.",
+        "Il y a toujours une humidité dans votre chambre, une émotion qui n'a pas de nom. Vous ne l'expliquez pas, vous vous y laissez simplement prendre.",
+        "Ce à quoi vous ressemblez le plus n’est pas une personne, mais une longue pluie."
+      ],
+      "tags": [
+        "désir humide",
+        "vortex de mémoire",
+        "Amour dévorant",
+        "ne peut pas être nommé"
+      ],
+      "soul": [
+        "Duras avait 70 ans lorsqu'il écrivit L'Amant. Elle a écrit sur le Chinois qu'elle a rencontré sur un ferry sur le Mékong quand elle avait 15 ans.",
+        "Tout son univers littéraire est torride, tropical, lubrique, destructeur…<strong>Elle n'écrit pas sur « l'amour », elle écrit sur « l'état d'être saisi par l'amour, détruit par l'amour et dont on se souvient encore après avoir été détruit ».</strong>",
+        "Il existe un mot en français appelé ravissement, qui signifie « être emporté » et aussi « être en transe ». Elle est RAVI. Elle était la femme qui avait été emmenée, perdue, pour ne jamais revenir."
+      ]
+    },
+    "RADI": {
+      "cn": "radium",
+      "enName": "Marie Curie",
+      "cnName": "玛丽·居里",
+      "source": "Le Radium, l'élément qu'elle a découvert",
+      "epigraph": "\"Dans la vie,<br>Rien ne vaut la peine d'être craint,<br>Seulement ce qui doit être compris. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui croit que « si vous travaillez dur jusqu'à l'extrême, le monde cédera définitivement la place ». Votre discipline est votre romance.",
+        "Vous êtes doux, mais vous n’êtes en aucun cas faible. Vous êtes prêt à sacrifier votre santé, votre sommeil et votre vie pour quelque chose en quoi vous croyez.",
+        "Vous n'avez pas besoin qu'on s'occupe de vous, ce dont vous avez besoin c'est de quelqu'un prêt à marcher à vos côtés jusqu'à l'aube."
+      ],
+      "tags": [
+        "Discipline ultime",
+        "romance rationnelle",
+        "les gens côte à côte",
+        "Payer pour la vérité"
+      ],
+      "soul": [
+        "Marie Curie a été la première femme à remporter le prix Nobel et la seule personne à remporter le prix Nobel dans deux domaines scientifiques différents (physique et chimie).",
+        "Elle a découvert le radium, un élément qui émet une faible lumière bleue——<strong>C'était aussi beau qu'un miracle, et cela l'a finalement tuée lentement.</strong>Ses doigts ont été brûlés suite à une exposition prolongée à des matières radioactives jusqu'à sa mort.",
+        "Elle a refusé de déposer une demande de brevet pour le radium car, selon elle, « la science appartient à toute l'humanité ». Elle est RADI. Elle est radieuse. C'est le genre de femme qui croit en la vérité au-dessus d'elle-même."
+      ]
+    },
+    "ADAL": {
+      "cn": "compositeur",
+      "enName": "Ada Lovelace",
+      "cnName": "阿达·洛芙莱斯",
+      "source": "le premier algorithme informatique, 1843",
+      "epigraph": "\"L'imagination est la faculté de découvrir.<br>Il pénètre dans le monde invisible. \"",
+      "persona": [
+        "Vous êtes le genre de fille que, quand tout le monde parle de « maintenant », vous avez déjà vu dans cent ans. Vous avez une image en tête que personne d’autre n’a.",
+        "Vous n'êtes pas froid, vous croyez simplement en la poésie exacte - un code clair, une preuve parfaite, quelque chose auquel vous avez pensé et prouvé par le temps, est votre poème d'amour.",
+        "Votre plus grande solitude est que personne ne peut suivre votre rythme. Mais vous savez qu'il y aura des gens dans le futur."
+      ],
+      "tags": [
+        "en avance",
+        "précision poétique",
+        "triomphe de l'imagination",
+        "les femmes à venir"
+      ],
+      "soul": [
+        "En 1843, cent ans avant l’invention des ordinateurs, Ada Lovelace a écrit le premier algorithme informatique au monde.",
+        "Elle a prédit que les machines seraient un jour capables de composer de la musique, de traiter des symboles et de faire des choses bien au-delà des mathématiques. Elle a appelé cette connaissance \"<strong>science poétique</strong>\".",
+        "Elle est morte à 36 ans et tout le monde la prenait pour une folle. Cent ans plus tard, les gens ont réalisé que tout ce qu’elle disait était vrai. Elle est ADAL. C'est une compositrice, quelqu'un qui écrit non seulement pour les algorithmes mais aussi pour l'avenir. Elle est l'ancêtre de toutes les filles « nées avant l'âge »."
+      ]
+    },
+    "EMMY": {
+      "cn": "Amy",
+      "enName": "Emmy Noether",
+      "cnName": "艾米·诺特",
+      "source": "La théorie de Noether, 1915",
+      "epigraph": "\"Dans le temple des mathématiques,<br>Elle était la plus grande femme autorisée. \"<br>——Einstein",
+      "persona": [
+        "Vous êtes le genre de fille qui peut s'asseoir et se concentrer pendant six heures sans lever les yeux. Il y a une symétrie, un ordre et une beauté dans votre monde que les autres ne peuvent pas voir.",
+        "Vous ne vous souciez pas de l'honneur, vous ne vous souciez pas du souvenir, ce qui vous importe c'est « si la chose elle-même est vraie, juste et belle ».",
+        "Vous êtes si doux que les gens oublient presque à quel point vous êtes vif."
+      ],
+      "tags": [
+        "La beauté de l'abstraction",
+        "concentration pure",
+        "génie sous-estimé",
+        "dévotion sans nom"
+      ],
+      "soul": [
+        "Amy Noether était l'une des mathématiciennes les plus importantes du XXe siècle. Einstein a dit : « Dans le temple des mathématiques, elle est le plus grand génie féminin autorisé. »",
+        "son\"<strong>Théorème de Noether</strong>\" - Prouver que la \"symétrie\" et la \"loi de conservation\" sont les deux faces d'une même chose - sont la base de toute la physique moderne.",
+        "Mais elle n’a pas de titre officiel de professeur à vie car elle est une femme. Elle a enseigné gratuitement à Göttingen pendant de nombreuses années et est décédée aux États-Unis après avoir été déportée par les nazis. Elle est EMMY. Elle fait partie de ces femmes qui « ont fait quelque chose de réel mais dont l’histoire s’est souvenue à contrecœur »."
+      ]
+    },
+    "DEVI": {
+      "cn": "Transformateur",
+      "enName": "Simone de Beauvoir",
+      "cnName": "西蒙娜·波伏娃",
+      "source": "du Deuxième Sexe, 1949",
+      "epigraph": "\"Les femmes ne naissent pas,<br>Elle a été transformée. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui s'arrêterait soudainement pour une injustice alors qu'elle marchait dans la rue. Vous ne vous contentez pas de « penser », vous « faites ».",
+        "Vous croyez que la pensée et l’action doivent être une seule et même chose – que chaque phrase que vous écrivez doit tenir debout et marcher.",
+        "Votre amour, votre amitié, votre carrière font partie de votre « devenir vous-même »."
+      ],
+      "tags": [
+        "sage en action",
+        "philosophie du café",
+        "écrire pour toutes les femmes",
+        "La pensée est la vie"
+      ],
+      "soul": [
+        "En 1949, Beauvoir écrit Le Deuxième Sexe, le texte féministe le plus important du XXe siècle. Ce qu'elle a dit\"<strong>La femme ne naît pas, elle le devient</strong>\", réécrivant du jour au lendemain la façon dont toutes les femmes se perçoivent.",
+        "Elle et Sartre ont écrit toute leur vie au Café de Flore à Paris, et elle a voyagé partout dans le monde, dans les rues et dans les usines. Ce n'est pas seulement une philosophe, c'est une femme qui vit le mot « liberté » de tout son être.",
+        "Elle est DEVI. C'est une transformatrice – le genre de femme qui croit : « Je ne suis pas née, je choisis d'être un jour après jour »."
+      ]
+    },
+    "HANA": {
+      "cn": "penseur",
+      "enName": "Hannah Arendt",
+      "cnName": "汉娜·阿伦特",
+      "source": "d'Eichmann à Jérusalem, 1963",
+      "epigraph": "\"La capacité de penser,<br>C’est la capacité de résister. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui se demande toujours « pourquoi ». Vous ne serez inclus dans aucun label et aucun camp ne vous demandera de prendre parti.",
+        "Votre sobriété est froide, mais votre froideur est de voir plus clairement – ​​après avoir vu clairement, vous passerez toute votre vie à défendre la vérité que vous avez vue.",
+        "Votre plus grande romance est de croire que la capacité d’une personne à penser de manière indépendante est une résistance en soi."
+      ],
+      "tags": [
+        "pensée indépendante",
+        "refuser de prendre parti",
+        "Voir à travers la médiocrité",
+        "faire le tour de la pièce"
+      ],
+      "soul": [
+        "Hannah Arendt était l'une des philosophes politiques les plus importantes du XXe siècle. Elle a suggéré dans sa couverture du procès Eichmann que «<strong>banalité du mal</strong>\"——Dites-nous que le plus grand mal ne vient souvent pas des monstres, mais d'une personne ordinaire qui ne pense pas.",
+        "Elle a été réprimandée pendant des décennies, mais elle n’a jamais retiré ce qu’elle avait dit. Elle a déclaré : « La capacité de penser est la capacité de résister. »",
+        "Elle est HANA. C'était la femme qui arpentait constamment la pièce, réfléchissant à chaque mot avant de le dire. Elle est l'ancêtre de toutes les femmes qui \"préfèrent réfléchir seules plutôt que de crier des slogans à qui que ce soit\"."
+      ]
+    },
+    "GAZE": {
+      "cn": "regard",
+      "enName": "Susan Sontag",
+      "cnName": "苏珊·桑塔格",
+      "source": "de Sur la photographie, 1977",
+      "epigraph": "\"Sérieusement existant,<br>C'est la plus grande résistance de cette époque. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui redéfinit « ce qui mérite d’être pris au sérieux » partout où vous allez. Vos yeux sont puissants et parfois inconfortables.",
+        "Vous ne voulez être représenté par personne et vous ne voulez représenter personne. Vous êtes uniquement responsable de votre propre jugement.",
+        "Votre amour, votre colère, votre passion ont tous du poids – parce que vous ne faites jamais semblant."
+      ],
+      "tags": [
+        "reine de l'intelligence",
+        "des yeux perçants",
+        "résistance sérieuse",
+        "refuser d'être représenté"
+      ],
+      "soul": [
+        "Susan Sontag a écrit \"Sur la photographie\", \"Sur la douleur des autres\" et \"Métaphores de la maladie\" - elle a traversé avec ses yeux les images et les mensonges de tout le 20e siècle.",
+        "Alors qu'elle avait la soixantaine, elle s'est envolée seule pour Sarajevo, déchirée par la guerre, où elle a réalisé En attendant Godot.<strong>Elle n'écrit pas seulement sur la douleur des autres, elle va au-delà de la douleur des autres.</strong>",
+        "Elle a déclaré : « Exister sérieusement est la plus grande résistance de cette époque ». Elle est REGARD. Elle regarde. Elle fait partie de ces femmes qui « voient trop clair pour ne pas s'exprimer »."
+      ]
+    },
+    "VIVA": {
+      "cn": "Longue vie à la vie",
+      "enName": "Frida Kahlo",
+      "cnName": "弗里达·卡罗",
+      "source": "son dernier tableau : Viva la Vida, 1954",
+      "epigraph": "\"Je peins des autoportraits,<br>Parce que je suis souvent seul,<br>Parce que je suis celui que je connais le mieux. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui accroche la blessure directement sur son corps et la décore avec les couleurs les plus vives. Votre douleur est réelle et votre vie est réelle. Il n’y a aucune contradiction entre ces deux choses.",
+        "Vous n’êtes pas élégant, vous n’êtes pas élégant, vous brûlez simplement.",
+        "Votre plus grande force est de ne jamais prétendre que vous ne ressentez pas de douleur. Mais vous ne laissez jamais la douleur vous transformer en une petite personne."
+      ],
+      "tags": [
+        "Le corps est la toile",
+        "Transforme la blessure en fleur",
+        "femme sous un soleil brûlant",
+        "douleur de balle droite"
+      ],
+      "soul": [
+        "Frida Kahlo a été impliquée dans un accident de voiture lorsqu'elle avait 18 ans et un poteau métallique lui a traversé le corps. Elle est restée au lit pendant un an et a peint des autoportraits pour le reste de sa vie.",
+        "Ses peintures sont tropicales, sensuelles, avec des fleurs, des animaux, du sang et des larmes——<strong>Elle a transformé toute sa douleur en célébration.</strong>",
+        "Son dernier tableau disait \"Viva la Vida\" - vive la vie. Huit jours après avoir terminé le tableau, elle mourut. Elle est VIVA. Elle est longue vie à la vie. C'est le genre de femme qui \"brûlera même jusqu'à son dernier souffle\"."
+      ]
+    },
+    "INFI": {
+      "cn": "illimité",
+      "enName": "Yayoi Kusama",
+      "cnName": "草间弥生",
+      "source": "Chambres avec miroir infini",
+      "epigraph": "\"Je transforme les illusions en points,<br>Les points me transforment dans l'univers. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui peut créer elle-même un univers entier. Votre monde spirituel est extensible à l’infini et les autres se perdront après y être entrés.",
+        "Vous n’avez pas besoin d’être compris, vous avez juste besoin de continuer à grandir. Vous êtes comme une plante, comme une cellule, comme la lumière – toujours en multiplication, toujours en répétition, toujours en devenant autre chose.",
+        "Votre plus grande solitude est que l’univers spirituel de personne d’autre dans ce monde ne peut vous accueillir. Mais vous l'avez accepté."
+      ],
+      "tags": [
+        "univers spirituel",
+        "prolifération illimitée",
+        "Illusion et art",
+        "autosuffisant"
+      ],
+      "soul": [
+        "Yayoi Kusama souffrait de graves hallucinations visuelles depuis qu'elle était enfant et le monde qu'elle voyait était toujours plein de points. Elle n’en a pas été vaincue, elle en a fait un art.",
+        "À partir de 1977, elle a été volontairement admise dans un hôpital psychiatrique, mais elle est allée au studio tous les jours et a continué à peindre ces points, à construire ces maisons en miroir et à faire du monde entier son langage.",
+        "Aujourd'hui âgée de 90 ans, elle continue de créer.<strong>Elle n’est pas piégée par la maladie mentale, elle fait de la maladie mentale une cosmologie.</strong>Elle est INFI. Elle est infinie. Elle est la femme qui est « un monde à elle seule »."
+      ]
+    },
+    "LYRE": {
+      "cn": "lyre",
+      "enName": "Sappho",
+      "cnName": "萨福",
+      "source": "sa lyre, 6ème siècle avant JC",
+      "epigraph": "\"J'ai dit,<br>Quelqu'un se souviendra de nous dans le futur. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui croit que l’amour est plus important que l’explication. Votre amour est nu, chaleureux, physique et non déguisé.",
+        "Vous n'êtes pas obligé de défendre celui que vous aimez, vous aimez simplement. Vous n'avez pas besoin de vous excuser pour votre bonheur, vous êtes simplement heureux.",
+        "Votre plus grande sagesse est de savoir que certaines choses n’ont pas besoin d’être théorisées – elles ont juste besoin d’être vécues."
+      ],
+      "tags": [
+        "Poète Éros",
+        "vérité du corps",
+        "amour inexpliqué",
+        "douce rébellion"
+      ],
+      "soul": [
+        "Sappho vivait sur l'île de Lesbos au 6ème siècle avant JC. Elle écrivait des poèmes lyriques, elle aimait les femmes, elle dirigeait des écoles de poésie et on l'appelait \"<strong>La dixième muse</strong>\".",
+        "La plupart de ses poèmes ont été perdus et il ne nous reste que quelques fragments - mais ces fragments à eux seuls suffisent aux femmes 2 500 ans plus tard pour la reconnaître, l'aimer et vouloir être elle.",
+        "Elle a dit : « J'ai dit, quelqu'un se souviendra de nous dans le futur. - Cette phrase elle-même est devenue une prophétie. Elle est LYRE. Elle est la lyre. Elle est l'ancêtre de toutes les femmes qui « justifient l'amour par l'amour lui-même »."
+      ]
+    },
+    "LAMP": {
+      "cn": "lampe à huile",
+      "enName": "Lin Huiyin",
+      "cnName": "林徽因",
+      "source": "sa lampe à huile à Lizhuang, années 1940",
+      "epigraph": "\"Tu es avril dans le monde,<br>Le bruit des rires illumina le vent environnant. \"",
+      "persona": [
+        "Vous êtes le genre de fille qui peut encore écrire de la poésie dans les circonstances les plus difficiles. Votre douceur n'est pas douce, c'est une sorte de force qui dit \"J'ai tout fait, mais je peux aussi écrire de la poésie\".",
+        "Vous prenez soin des autres et les autres prennent soin de vous - mais la partie la plus profonde de vous n'appartient qu'à vous-même.",
+        "Votre plus beau moment est celui où personne ne vous regarde, lorsque vous dessinez, écrivez et réfléchissez seul sous une lampe à huile."
+      ],
+      "tags": [
+        "plusieurs identités",
+        "L'élégance dans le chaos de la guerre",
+        "intelligence douce",
+        "femme sous lampe"
+      ],
+      "soul": [
+        "Lin Huiyin est la première génération de femmes architectes en Chine et l'une des poètes chinoises les plus célèbres du XXe siècle.",
+        "Pendant la guerre anti-japonaise, elle et Liang Sicheng ont continué à étudier, cartographier et protéger les anciens bâtiments chinois dans une maison brisée à Lizhuang, Sichuan, bien qu'ils soient gravement malades et affamés.<strong>A cette époque, elle écrivait \"You Are April in the World\" - elle vomissait du sang et écrivait de la poésie en même temps.</strong>",
+        "Ce n'est pas un \"vase\", c'est une personne qui a passé toute sa vie à prouver que \"les femmes peuvent être à la fois scientifiques, artistes, mères et amantes\". C'est une LAMPE. Elle est la lampe à huile qui refuse de s'éteindre chez Li Zhuang."
+      ]
+    },
+    "BELL": {
+      "cn": "cloche en verre",
+      "enName": "Sylvia Plath",
+      "cnName": "西尔维娅·普拉斯",
+      "source": "de La cloche, 1963",
+      "epigraph": "\"Je ferme les yeux,<br>Le monde entier s’est effondré.<br>J'ouvre les yeux,<br>Tout revient. \"",
+      "persona": [
+        "Tu es le genre de fille si intelligente que c'en est presque une maladie. Vous voyez plus de choses que les autres, vous ressentez les choses plus profondément que les autres et il vous est plus difficile de vivre que les autres.",
+        "Votre esprit est comme une cloche qui vous sépare du monde. Vous voulez sortir, mais vous voulez rester à l'intérieur.",
+        "Votre plus grand poème a été écrit le jour où vous souhaitiez le plus disparaître."
+      ],
+      "tags": [
+        "Génie et douleur",
+        "cloche en verre",
+        "Creusez vers l'intérieur",
+        "poème brûlant"
+      ],
+      "soul": [
+        "Plath s'est suicidé à l'âge de 30 ans, laissant derrière lui deux enfants, un roman intitulé The Bell Jar et Ariel, qui deviendra le recueil de poésie le plus important du XXe siècle.",
+        "Ses poèmes sont confessionnels, disant tout « ce que les femmes ne devraient pas dire » : l'effondrement de la maternité, l'étouffement du mariage, la complexité de son père et la violence contre elle-même.<strong>Elle l'écrit et elle n'a plus besoin de vivre.</strong>",
+        "Elle n'est pas une perdante. C'est une personne qui écrit en même temps tous les mots selon lesquels les femmes sont réprimées. Elle est BELL. Elle est la cloche et le son le plus fort de la cloche."
+      ]
+    }
+  },
+  "questions": [
+    {
+      "section": "tous les jours tu",
+      "q": "Les matins de week-end, lorsque vous ouvrez les yeux, la première chose que vous voulez faire est -",
+      "options": [
+        "Continuez à vous allonger, sans vouloir rien faire, et laissez le soleil grimper lentement sur le mur.",
+        "Levez-vous immédiatement, préparez du café, écoutez de la musique et commencez votre journée avec un rituel",
+        "Décrochez votre téléphone et jetez un œil à ce qui s'est passé dans le monde au cours des huit dernières heures",
+        "Fermez les yeux et réfléchissez un moment, racontez dans votre esprit le rêve de la nuit dernière et assurez-vous de n'avoir pas oublié certaines choses."
+      ]
+    },
+    {
+      "section": "tous les jours tu",
+      "q": "Comment gérez-vous un ami qui vous entraîne à une fête à laquelle vous n’avez pas vraiment envie d’aller ?",
+      "options": [
+        "Trouvez une raison pour vous mettre à l'aise et décliner, puis restez chez vous et sentez que le monde est enfin calme.",
+        "Allez-y, mais restez assis dans un coin tout le temps, en considérant cela comme une excursion pour observer le monde.",
+        "Je suis allé et j'ai passé un bon moment de manière inattendue. Vous êtes plus vivant que vous ne le pensiez.",
+        "N'y allez pas et dites clairement à vos amis « Je ne veux pas socialiser pour le moment » sans explication ni culpabilité."
+      ]
+    },
+    {
+      "section": "tous les jours tu",
+      "q": "Lorsqu'une amie vous envoie un message au milieu de la nuit pour lui dire qu'elle est triste, votre première réaction est :",
+      "options": [
+        "Appelez-la immédiatement et parlez-lui jusqu'à ce qu'elle s'endorme",
+        "Répondez-lui sérieusement, dites-lui que vous l'avez entendue, puis invitez-la à dîner demain matin.",
+        "Vous ne savez pas quoi dire, mais vous continuerez à regarder ce message, à le taper et à le supprimer encore et encore.",
+        "Envoie-lui une chanson, tu sais qu'elle comprend"
+      ]
+    },
+    {
+      "section": "tous les jours tu",
+      "q": "Une période de temps complètement seul, qu'est-ce que tu veux le plus en faire -",
+      "options": [
+        "Regardez un vieux film que vous avez vu trois fois mais que vous souhaitez quand même revoir",
+        "Nettoyer la pièce et remettre tout à sa place",
+        "Écrivez quelque chose, pas pour le publier, juste pour découvrir à quoi vous avez pensé récemment",
+        "Ne fais rien, assieds-toi près de la fenêtre et laisse-toi lentement vider"
+      ]
+    },
+    {
+      "section": "tous les jours tu",
+      "q": "Lorsque vous recevez un cadeau que vous n'aimez pas beaucoup, votre première réaction est :",
+      "options": [
+        "Il vaut mieux dire merci sincèrement, car on voit l’intention de l’autre, même si ce n’est vraiment pas votre tasse de thé",
+        "Dites sérieusement « Wow, c'est si spécial », puis rangez-le et offrez-le ou raccrochez-le plus tard.",
+        "Dites simplement \"Hé, ce n'est pas vraiment mon style, mais je suis content que vous vouliez me le donner.\"",
+        "Vous commencez immédiatement à vous demander si cette personne vous connaît vraiment, même si vous ne le dites pas à voix haute."
+      ]
+    },
+    {
+      "section": "tous les jours tu",
+      "q": "Votre statut de travail/études le plus idéal est——",
+      "options": [
+        "Dans une pièce absolument silencieuse, personne ne poussera brusquement la porte et vous pourrez travailler six heures consécutives sans interruption.",
+        "Un café ensoleillé, entouré de voix d'étrangers, mais personne ne te connaît",
+        "Dans une équipe, quelqu'un peut en discuter à tout moment, et vos idées deviendront plus claires grâce aux collisions avec les autres.",
+        "Un environnement complètement chaotique, avec des livres empilés au sol et des papiers qui volent partout, mais on sait lequel est où"
+      ]
+    },
+    {
+      "section": "tous les jours tu",
+      "q": "Dans un groupe d'amis, vous êtes souvent -",
+      "options": [
+        "Le plus silencieux, mais tout le monde sait que tu entends tout",
+        "Sans vous, la personne qui a tout organisé, nous ne serions peut-être pas réunis du tout.",
+        "La personne qui dit soudainement quelque chose qui fait taire tout le monde pendant deux secondes",
+        "La personne qui met sa propre note de bas de page à côté de l'histoire de chacun"
+      ]
+    },
+    {
+      "section": "Tu es en crise",
+      "q": "Si quelqu'un que vous aimez vous comprend mal, votre première réaction est——",
+      "options": [
+        "N'explique pas un mot, retourne-toi et pars, tu penses qu'il devrait pouvoir comprendre, s'il t'aime vraiment",
+        "Faites de votre mieux pour expliquer et présenter tous les détails. Ce n'est que lorsqu'il hoche la tête que vous pouvez pleurer avec confiance.",
+        "Tu étais abasourdi, ton esprit explosait, mais tu savais que tu l'écrirais plus tard",
+        "Vous analysez calmement pourquoi il a tant mal compris, puis vous découvrez que ce malentendu mérite plus d'être réfléchi que le malentendu lui-même."
+      ]
+    },
+    {
+      "section": "Tu es en crise",
+      "q": "Lorsque vous voyez quelque chose de manifestement injuste, ce que vous voulez le plus faire est——",
+      "options": [
+        "Parlez immédiatement, même si vous savez que cela vous coûtera quelque chose",
+        "Gardez-le à l'esprit, puis exprimez-le d'autres manières dans votre écriture/travail",
+        "Trouvez la personne qui a été blessée, marchez vers elle en silence et restez avec elle, pas besoin de parler",
+        "Transformez-le en une question concrète que vous n'oublierez jamais pour le reste de votre vie : pourquoi cela se produit-il ?"
+      ]
+    },
+    {
+      "section": "Tu es en crise",
+      "q": "Ce que vous avez le plus peur de perdre dans votre vie, c'est en fait——",
+      "options": [
+        "Cette personne qui peut te comprendre - tant qu'il y en a une, tu peux encore vivre",
+        "Votre propre sobriété - plutôt que d'être trompé, vous avez plus peur qu'un jour vous vous trompiez vous-même",
+        "Votre chambre - l'endroit où personne ne peut entrer et vous déranger",
+        "Ce sentiment de « vous pouvez encore commencer » : tant que vous pouvez commencer quelque chose de nouveau, tout n'est pas encore fini."
+      ]
+    },
+    {
+      "section": "Tu es en crise",
+      "q": "Une relation importante ne pourra jamais être rétablie. La façon la plus courante de l'utiliser est——",
+      "options": [
+        "Cela peut prendre beaucoup de temps pour le digérer tranquillement seul, mais vous ne voulez pas que quelqu'un vous accompagne pendant cette période.",
+        "Passez directement à autre chose, au travail, aux voyages, aux nouvelles personnes, vous ne pouvez pas vous arrêter de toute façon",
+        "Écrivez-le à plusieurs reprises, dans votre journal, dans la boîte de discussion et dans votre cœur, jusqu'à ce que cette personne devienne une image littéraire.",
+        "Transformez-le en une nouvelle perspective pour voir le monde – à partir de maintenant, vous verrez n'importe quel amour avec une couche supplémentaire."
+      ]
+    },
+    {
+      "section": "Tu es en crise",
+      "q": "Quand vous êtes le plus fatigué, ce que vous voulez vraiment, c'est...",
+      "options": [
+        "Un câlin qui ne nécessite aucune explication. L’autre personne ne demande rien, elle vous tient simplement dans ses bras.",
+        "Une tasse de truc chaud, un coin tranquille, que personne ne trouve pendant une demi-heure",
+        "Une petite chose sur laquelle vous pouvez vous concentrer - plier les vêtements, faire la vaisselle, organiser votre bureau - occupera vos mains et votre cerveau ne vous fera pas mal.",
+        "Un morceau de code propre, ou un problème mathématique, ou une donnée à trier - laissez à votre esprit quelque chose à \"calculer clairement\""
+      ]
+    },
+    {
+      "section": "Tu es en crise",
+      "q": "Ce coin de votre cœur que « personne ne peut vraiment comprendre » prétend être——",
+      "options": [
+        "Une pensée que tu as déjà pensé mais que tu ne dirais jamais à personne",
+        "Une tristesse qui n'a pas de nom depuis que tu es petite, elle est toujours là, sans raison",
+        "Une sorte de doute que vous avez sur vous-même : vous avez peur de ne pas être aussi intelligent, aussi profond et aussi bon que vous le pensez.",
+        "Une personne que vous avez abandonnée depuis longtemps. Vous pensez avoir abandonné, mais parfois, vous y pensez soudainement."
+      ]
+    },
+    {
+      "section": "Tu es en crise",
+      "q": "Lorsqu’une véritable douleur survient, votre première action est généralement :",
+      "options": [
+        "Trouvez immédiatement quelqu'un en qui vous avez confiance et dites-le-lui complètement : cela n'arrive pas vraiment tant que vous ne le dites pas.",
+        "Laissez votre corps bouger en premier, courez, marchez, nettoyez la pièce",
+        "Prenez du recul et regardez-le, sachant que ce n'est qu'une vague d'émotions et que cela passera - vous n'expliquez pas et ne luttez pas, vous attendez simplement que cela disparaisse.",
+        "Transformez-le en article, en pensée, en théorie - vous ne permettez pas que cela se produise en vain"
+      ]
+    },
+    {
+      "section": "tu es poétique",
+      "q": "Si vous étiez une voix, à quoi ressembleriez-vous le plus...",
+      "options": [
+        "La basse des vagues qui s’écrasent contre les rochers, encore et encore, hypnotise et engloutit les gens.",
+        "Une corde qui se brise soudainement produit le son le plus fort au moment le moins approprié",
+        "Le bourdonnement à haute fréquence des instruments du laboratoire tard dans la nuit, solitaire, précis, quelqu'un mesure quelque chose",
+        "Quelqu'un pleure dans la pièce voisine. Vous ne pouvez pas l'entendre clairement. On n’entend que des sanglots humides et étouffés."
+      ]
+    },
+    {
+      "section": "tu es poétique",
+      "q": "Si vous étiez une sorte de lumière, vous seriez plutôt comme...",
+      "options": [
+        "Dans le chaos de la guerre, une lampe à huile refusait de s’éteindre, illuminant les dessins et les bombardements au loin.",
+        "La lumière blanche réfléchie par le toit de fer sous le soleil brûlant empêche les gens d'ouvrir les yeux, mais ils sont toujours en vie.",
+        "Le dernier rayon d'orange s'infiltrant dans les fissures des rideaux au crépuscule, le dernier peu de chaleur de la journée et la dernière possibilité",
+        "À quatre heures du matin, les lampes fluorescentes du dépanneur sont toutes seules et la lumière au-dessus de votre tête bourdonne."
+      ]
+    },
+    {
+      "section": "tu es poétique",
+      "q": "Si votre monde spirituel est un espace, c'est plutôt——",
+      "options": [
+        "Une salle de miroirs infinie, d'innombrables vous répétez la même action, et vous ne pouvez plus dire laquelle est réelle.",
+        "Un salon soigné, avec les services à thé disposés et le canapé en place, tous ceux qui entreront seront inclus dans votre prochain roman.",
+        "Au deuxième étage du café donnant sur la rue, vous pourrez parcourir tout le 20e siècle en bas et vous ne manquerez de rien.",
+        "Dans une oliveraie au bord de la mer Égée, la lumière tombe des feuilles. Vous écrivez un poème et la personne que vous aimez est allongée à côté de vous."
+      ]
+    },
+    {
+      "section": "tu es poétique",
+      "q": "À quel moment voulez-vous le plus qu'une fille étrange se souvienne de vous——",
+      "options": [
+        "Lorsqu'elle feuilletait un vieux livre, il y avait une ligne qui la faisait fermer le livre et rester assise là pendant un long moment.",
+        "Quand elle a résolu un problème, ce moment qui s'est soudainement allumé était autrefois le vôtre",
+        "La première fois qu’elle a osé dire « non », elle l’a appris de vous, même si elle pensait l’avoir compris toute seule.",
+        "Lorsqu'elle supprime un message en pleine nuit, elle n'a finalement plus besoin de la réponse de cette personne et vous êtes son allié silencieux."
+      ]
+    },
+    {
+      "section": "tu es poétique",
+      "q": "Dans cent ans, si quelqu'un pense à vous, ce dont vous voulez le plus qu'il se souvienne, c'est...",
+      "options": [
+        "Une phrase que tu as écrite une fois, elle ne savait pas qui en était l'auteur jusqu'à sa mort, mais cette phrase l'a sauvée",
+        "Une maison que tu as dessinée, elle ne la remarquerait pas en passant devant, mais à ce moment-là elle était en sécurité",
+        "Un paragraphe de mots que vous avez imprimé dans le manuel, elle déteste ce cours, mais quelques années plus tard, à un certain point bas, elle y pensera soudain",
+        "Une ligne de code que tu as découverte, toute sa vie est construite dessus, mais elle ne saura pas que c'est toi"
+      ]
+    },
+    {
+      "section": "tu es poétique",
+      "q": "Si vous ne pouviez utiliser qu’un seul verbe pour vous décrire, lequel choisiriez-vous ?",
+      "options": [
+        "couler, comme une pierre qui s'enfonce lentement dans l'eau",
+        "Brûle, comme une allumette que personne n'a allumée mais qui continue de brûler",
+        "Pensez, comme une personne qui fait toujours les cent pas dans la pièce",
+        "Prolifère, comme une cellule. Je ne sais pas pourquoi, je sais juste que cela ne cesse d’augmenter."
+      ]
+    }
+  ]
+}

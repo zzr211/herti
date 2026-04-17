@@ -20,6 +20,69 @@ html[lang="ko"] body {
   word-break: keep-all;
 }
 
+html[lang="ja"] .cover-sub,
+html[lang="ja"] .language-switcher,
+html[lang="ja"] .quiz-section,
+html[lang="ja"] .question-num,
+html[lang="ko"] .cover-sub,
+html[lang="ko"] .language-switcher,
+html[lang="ko"] .quiz-section,
+html[lang="ko"] .question-num {
+  font-family: 'Noto Serif JP', 'Noto Serif KR', 'Noto Serif SC', serif;
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
+
+html[lang="ja"] .cover-cn-title,
+html[lang="ko"] .cover-cn-title {
+  letter-spacing: 0.2em;
+}
+
+html[lang="ja"] .start-btn,
+html[lang="ja"] .restart-btn,
+html[lang="ja"] .back-btn,
+html[lang="ko"] .start-btn,
+html[lang="ko"] .restart-btn,
+html[lang="ko"] .back-btn {
+  letter-spacing: 0.1em;
+}
+
+html[lang="ru"] body,
+html[lang="fr"] body,
+html[lang="es"] body {
+  font-family: 'Noto Serif', 'Cormorant Garamond', 'Noto Serif SC', serif;
+  line-height: 1.75;
+}
+
+html[lang="ru"] .cover-cn-title,
+html[lang="fr"] .cover-cn-title,
+html[lang="es"] .cover-cn-title {
+  letter-spacing: 0.14em;
+}
+
+html[lang="ru"] .start-btn,
+html[lang="fr"] .start-btn,
+html[lang="es"] .start-btn,
+html[lang="ru"] .restart-btn,
+html[lang="fr"] .restart-btn,
+html[lang="es"] .restart-btn {
+  letter-spacing: 0.08em;
+}
+
+html[lang="ru"] .cover-sub,
+html[lang="fr"] .cover-sub,
+html[lang="es"] .cover-sub,
+html[lang="ru"] .language-switcher,
+html[lang="fr"] .language-switcher,
+html[lang="es"] .language-switcher,
+html[lang="ru"] .quiz-section,
+html[lang="fr"] .quiz-section,
+html[lang="es"] .quiz-section {
+  font-family: 'Noto Serif', 'Cormorant Garamond', serif;
+  letter-spacing: 0.04em;
+  font-style: normal;
+}
+
 .app {
   max-width: 480px;
   margin: 0 auto;

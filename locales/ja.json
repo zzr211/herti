@@ -17,6 +17,18 @@
       {
         "code": "ko",
         "label": "한국어"
+      },
+      {
+        "code": "ru",
+        "label": "Русский"
+      },
+      {
+        "code": "fr",
+        "label": "Français"
+      },
+      {
+        "code": "es",
+        "label": "Español"
       }
     ],
     "title": "HERTI · 彼女の人格マップ",

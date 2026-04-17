@@ -17,6 +17,18 @@
       {
         "code": "ko",
         "label": "한국어"
+      },
+      {
+        "code": "ru",
+        "label": "Русский"
+      },
+      {
+        "code": "fr",
+        "label": "Français"
+      },
+      {
+        "code": "es",
+        "label": "Español"
       }
     ],
     "title": "HERTI · 그녀의 성격 지도",

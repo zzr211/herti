@@ -17,6 +17,18 @@
       {
         "code": "ko",
         "label": "한국어"
+      },
+      {
+        "code": "ru",
+        "label": "Russian"
+      },
+      {
+        "code": "fr",
+        "label": "French"
+      },
+      {
+        "code": "es",
+        "label": "Spanish"
       }
     ],
     "title": "HERTI · Her Personality Map",
