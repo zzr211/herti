@@ -1,115 +1,161 @@
+let QUESTIONS = [];
+let PERSONAS = {};
+
 let currentQ = 0;
 let answers = new Array(20).fill(null);
 let userVec = [0, 0, 0, 0, 0];
+let latestResult = null;
 
-/** 封面底部与结果页底部共用：答题与加载中不出现，以免打断沉浸感 */
+const SIGMA_INV = [
+  [ 1.5901, -0.9630, -0.9542, -1.0474,  0.2719],
+  [-0.9630,  1.9043,  1.4849,  0.6040, -0.4563],
+  [-0.9542,  1.4849,  1.8050,  0.7022, -0.6433],
+  [-1.0474,  0.6040,  0.7022,  1.3543,  0.0767],
+  [ 0.2719, -0.4563, -0.6433,  0.0767,  0.8414],
+];
+
+function t(path, fallback = "") {
+  return window.HERTI_I18N.t(path, fallback);
+}
+
+function buildDataFromLocale() {
+  const locale = window.HERTI_I18N.getCurrentMessages();
+  QUESTIONS = locale.questions.map((q, idx) => ({
+    section: q.section,
+    q: q.q,
+    options: q.options.map((text, optIdx) => ({
+      t: text,
+      d: QUESTION_DELTAS[idx][optIdx],
+    })),
+  }));
+
+  PERSONAS = {};
+  PERSONA_ORDER.forEach((code) => {
+    PERSONAS[code] = {
+      vec: PERSONA_VECS[code],
+      ...locale.personas[code],
+    };
+  });
+}
+
 function getPageCreditsHtml() {
-  const xhs = 'https://www.xiaohongshu.com/user/profile/607e40270000000001001849';
+  const xhs = "https://www.xiaohongshu.com/user/profile/607e40270000000001001849";
+  const source = t("ui.credits.source");
+  const maint = t("ui.credits.maint");
   return `
     <div class="page-credits">
-      <p>题目与呈现源自 <a href="https://herti.us/" target="_blank" rel="noopener noreferrer">herti.us</a>，版权归原作者与原作站点；本站为个人学习归档之副本。</p>
-      <p class="page-credits-maint">维护 · <a href="https://space.bilibili.com/435242714" target="_blank" rel="noopener noreferrer" title="哔哩哔哩">哔哩哔哩 · 清心寡欲哆啦道人</a> · <a href="${xhs}" target="_blank" rel="noopener noreferrer" title="小红书">小红书 · Dreammaker</a> · 公众号「千秋万事」 · <a href="https://sbtihub.pages.dev/" target="_blank" rel="noopener noreferrer" title="书签与导航">sbtihub.pages.dev</a></p>
+      <p>${source.replace("herti.us", '<a href="https://herti.us/" target="_blank" rel="noopener noreferrer">herti.us</a>')}</p>
+      <p class="page-credits-maint">${maint} · <a href="https://space.bilibili.com/435242714" target="_blank" rel="noopener noreferrer" title="哔哩哔哩">哔哩哔哩 · 清心寡欲哆啦道人</a> · <a href="${xhs}" target="_blank" rel="noopener noreferrer" title="小红书">小红书 · Dreammaker</a> · 公众号「千秋万事」 · <a href="https://sbtihub.pages.dev/" target="_blank" rel="noopener noreferrer" title="书签与导航">sbtihub.pages.dev</a></p>
     </div>
   `;
 }
 
+function renderLanguageSwitcher() {
+  const mount = document.getElementById("languageSwitcher");
+  if (!mount) return;
+  const list = t("ui.languages", []);
+  mount.innerHTML = list.map((item) => {
+    const active = item.code === window.HERTI_I18N.getCurrentLocale();
+    return `<button class="lang-btn${active ? " active" : ""}" data-lang="${item.code}" type="button">${item.label}</button>`;
+  }).join('<span class="lang-dot">·</span>');
+}
+
+function applyLocalizedStaticText() {
+  document.title = t("ui.title", "HERTI");
+  document.getElementById("coverSub").textContent = t("ui.cover.sub", "");
+  document.getElementById("coverCnTitle").textContent = t("ui.cover.cnTitle", "");
+  document.getElementById("coverTagline").innerHTML = t("ui.cover.tagline", []).join("<br>");
+  document.getElementById("coverMeta").textContent = t("ui.cover.meta", "");
+  document.getElementById("startBtn").textContent = t("ui.cover.start", "");
+  document.getElementById("startHint").textContent = t("ui.cover.hint", "");
+  document.getElementById("backBtn").textContent = t("ui.quiz.back", "");
+  document.getElementById("quizFoot").textContent = t("ui.quiz.footer", "HERTI");
+  document.getElementById("loadingText").innerHTML = t("ui.loading.text", []).join("<br>");
+  document.getElementById("coverCreditsMount").innerHTML = getPageCreditsHtml();
+  renderLanguageSwitcher();
+}
+
 function startQuiz() {
   currentQ = 0;
-  answers = new Array(20).fill(null);
+  answers = new Array(QUESTIONS.length).fill(null);
   userVec = [0, 0, 0, 0, 0];
-  document.getElementById('cover').style.display = 'none';
-  document.getElementById('quiz').classList.add('active');
+  latestResult = null;
+  document.getElementById("result").classList.remove("active");
+  document.getElementById("cover").style.display = "none";
+  document.getElementById("loading").classList.remove("active");
+  document.getElementById("quiz").classList.add("active");
   renderQuestion();
   window.scrollTo(0, 0);
 }
 
 function renderQuestion() {
   const q = QUESTIONS[currentQ];
-  document.getElementById('quizSection').textContent = q.section;
-  document.getElementById('quizProgress').textContent =
-    String(currentQ + 1).padStart(2, '0') + ' / 20';
-  document.getElementById('progressFill').style.width =
-    ((currentQ + 1) / 20 * 100) + '%';
-  document.getElementById('questionNum').textContent =
-    'Question ' + String(currentQ + 1).padStart(2, '0');
-  document.getElementById('questionText').textContent = q.q;
+  document.getElementById("quizSection").textContent = q.section;
+  document.getElementById("quizProgress").textContent = `${String(currentQ + 1).padStart(2, "0")} / ${QUESTIONS.length}`;
+  document.getElementById("progressFill").style.width = `${((currentQ + 1) / QUESTIONS.length) * 100}%`;
+  document.getElementById("questionNum").textContent = `${t("ui.quiz.questionPrefix", "Question ")}${String(currentQ + 1).padStart(2, "0")}`;
+  document.getElementById("questionText").textContent = q.q;
 
   const selectedIdx = answers[currentQ];
-  const optsHtml = q.options.map((opt, i) => {
-    const selectedClass = (selectedIdx === i) ? ' selected' : '';
-    return `<div class="option${selectedClass}" onclick="pickOption(${i})">
-      <span class="option-letter">${String.fromCharCode(65+i)}.</span>
-      <span class="option-text">${opt.t}</span>
-    </div>`;
-  }).join('');
-  document.getElementById('options').innerHTML = optsHtml;
+  document.getElementById("options").innerHTML = q.options.map((opt, i) => {
+    const selectedClass = selectedIdx === i ? " selected" : "";
+    return `<div class="option${selectedClass}" onclick="pickOption(${i})"><span class="option-letter">${String.fromCharCode(65 + i)}.</span><span class="option-text">${opt.t}</span></div>`;
+  }).join("");
 
-  const backBtn = document.getElementById('backBtn');
-  backBtn.style.visibility = currentQ === 0 ? 'hidden' : 'visible';
-
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById("backBtn").style.visibility = currentQ === 0 ? "hidden" : "visible";
 }
 
 function pickOption(idx) {
   answers[currentQ] = idx;
-
-  currentQ++;
+  currentQ += 1;
   if (currentQ >= QUESTIONS.length) {
     finishQuiz();
-  } else {
-    renderQuestion();
+    return;
   }
+  renderQuestion();
 }
 
 function goBack() {
-  if (currentQ > 0) {
-    currentQ--;
-    renderQuestion();
+  if (currentQ === 0) return;
+  currentQ -= 1;
+  renderQuestion();
+}
+
+function recalcUserVector() {
+  userVec = [0, 0, 0, 0, 0];
+  for (let qIdx = 0; qIdx < QUESTIONS.length; qIdx += 1) {
+    const aIdx = answers[qIdx];
+    if (aIdx === null) continue;
+    const delta = QUESTIONS[qIdx].options[aIdx].d;
+    for (let i = 0; i < 5; i += 1) userVec[i] += delta[i];
   }
 }
 
 function finishQuiz() {
-  userVec = [0, 0, 0, 0, 0];
-  for (let qIdx = 0; qIdx < QUESTIONS.length; qIdx++) {
-    const aIdx = answers[qIdx];
-    if (aIdx !== null) {
-      const delta = QUESTIONS[qIdx].options[aIdx].d;
-      for (let i = 0; i < 5; i++) userVec[i] += delta[i];
-    }
-  }
-
-  document.getElementById('quiz').classList.remove('active');
-  document.getElementById('loading').classList.add('active');
+  recalcUserVector();
+  document.getElementById("quiz").classList.remove("active");
+  document.getElementById("loading").classList.add("active");
   window.scrollTo(0, 0);
 
   setTimeout(() => {
-    const result = matchPersona();
-    document.getElementById('loading').classList.remove('active');
-    renderResult(result);
-    document.getElementById('result').classList.add('active');
+    latestResult = matchPersona();
+    document.getElementById("loading").classList.remove("active");
+    renderResult(latestResult);
+    document.getElementById("result").classList.add("active");
   }, 2400);
 }
-
-// Σ⁻¹ 预计算的逆协方差矩阵（基于 16 位女性的 5 维向量）
-const SIGMA_INV = [
-  [ 1.5901, -0.9630, -0.9542, -1.0474,  0.2719],
-  [-0.9630,  1.9043,  1.4849,  0.6040, -0.4563],
-  [-0.9542,  1.4849,  1.8050,  0.7022, -0.6433],
-  [-1.0474,  0.6040,  0.7022,  1.3543,  0.0767],
-  [ 0.2719, -0.4563, -0.6433,  0.0767,  0.8414]
-];
 
 function normalize(vec) {
   const maxAbs = Math.max(...vec.map(Math.abs));
   if (maxAbs === 0) return vec.slice();
-  return vec.map(v => v * 2 / maxAbs);
+  return vec.map((v) => (v * 2) / maxAbs);
 }
 
 function mahalanobis(a, b) {
-  const diff = [a[0]-b[0], a[1]-b[1], a[2]-b[2], a[3]-b[3], a[4]-b[4]];
+  const diff = [a[0] - b[0], a[1] - b[1], a[2] - b[2], a[3] - b[3], a[4] - b[4]];
   let s = 0;
-  for (let i = 0; i < 5; i++) {
-    for (let j = 0; j < 5; j++) {
+  for (let i = 0; i < 5; i += 1) {
+    for (let j = 0; j < 5; j += 1) {
       s += diff[i] * SIGMA_INV[i][j] * diff[j];
     }
   }
@@ -118,27 +164,14 @@ function mahalanobis(a, b) {
 
 function matchPersona() {
   const userNorm = normalize(userVec);
-
-  console.log('=== HERTI Debug ===');
-  console.log('Raw userVec:', userVec);
-  console.log('Normalized:',  userNorm.map(v => v.toFixed(2)));
-
-  const codes = Object.keys(PERSONAS);
-  const distances = codes.map(c => ({
-    code: c,
-    dist: mahalanobis(userNorm, PERSONAS[c].vec)
+  const distances = PERSONA_ORDER.map((code) => ({
+    code,
+    dist: mahalanobis(userNorm, PERSONAS[code].vec),
   })).sort((a, b) => a.dist - b.dist);
-
-  console.log('Top 5 matches:');
-  distances.slice(0, 5).forEach(d =>
-    console.log(`  ${d.code} (${PERSONAS[d.code].cn}): ${d.dist.toFixed(3)}`)
-  );
-  console.log('===================');
-
   return {
     primary: distances[0].code,
     mirror: distances[1].code,
-    opposite: distances[distances.length - 1].code
+    opposite: distances[distances.length - 1].code,
   };
 }
 
@@ -146,86 +179,88 @@ function renderResult(r) {
   const p = PERSONAS[r.primary];
   const mirror = PERSONAS[r.mirror];
   const opposite = PERSONAS[r.opposite];
-  const idx = Object.keys(PERSONAS).indexOf(r.primary) + 1;
+  const idx = PERSONA_ORDER.indexOf(r.primary) + 1;
 
   const html = `
     <div class="brand-bar">
       <div class="logo">HERTI</div>
-      <div class="meta">No.${String(idx).padStart(3, '0')} / 16</div>
+      <div class="meta">No.${String(idx).padStart(3, "0")} / ${PERSONA_ORDER.length}</div>
     </div>
-
     <div class="hero">
-      <div class="hero-label">你的人格类型是</div>
+      <div class="hero-label">${t("ui.result.heroLabel")}</div>
       <div class="hero-code">${r.primary}</div>
       <div class="hero-meaning">— ${p.source}</div>
       <div class="hero-cn-name">${p.cn}</div>
       <div class="epigraph">${p.epigraph}</div>
     </div>
-
     <div class="section">
-      <div class="section-label">Persona</div>
-      ${p.persona.map(t => `<p class="persona-text">${t}</p>`).join('')}
-      <div class="tags">
-        ${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}
-      </div>
+      <div class="section-label">${t("ui.result.sectionLabel")}</div>
+      ${p.persona.map((line) => `<p class="persona-text">${line}</p>`).join("")}
+      <div class="tags">${p.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
     </div>
-
     <div class="ornament-mid">· · ·</div>
-
     <div class="soul-card">
-      <div class="soul-label">Soul Origin · 灵魂原型</div>
+      <div class="soul-label">${t("ui.result.soulLabel")}</div>
       <div class="soul-name">${p.enName}</div>
       <div class="soul-name-cn">${p.cnName}</div>
-      ${p.soul.map(t => `<p class="soul-text">${t}</p>`).join('')}
+      ${p.soul.map((line) => `<p class="soul-text">${line}</p>`).join("")}
     </div>
-
     <div class="relations">
       <div class="relation-card">
-        <div class="relation-label">your mirror · 镜像</div>
+        <div class="relation-label">${t("ui.result.mirrorLabel")}</div>
         <div class="relation-code">${r.mirror}</div>
         <div class="relation-name">${mirror.cn} · ${mirror.cnName}</div>
       </div>
       <div class="relation-card">
-        <div class="relation-label">your opposite · 反面</div>
+        <div class="relation-label">${t("ui.result.oppositeLabel")}</div>
         <div class="relation-code">${r.opposite}</div>
         <div class="relation-name">${opposite.cn} · ${opposite.cnName}</div>
       </div>
     </div>
-
     <div class="footer">
       <div class="ornament-mid">· · ·</div>
-      <p class="footer-quote">
-        历史隐藏了她们,<br>
-        但你的灵魂里,有一块碎片,<br>
-        正以她的频率震动。
-      </p>
-      <p class="share-hint">
-        把你的人格卡截图发到小红书,<br>
-        让她,从你的朋友圈里,<br>
-        遇见另一个她。
-      </p>
-      <button class="restart-btn" onclick="restart()">重 新 测 试</button>
-      <p class="nominate">
-        她们一共有十六位。<br>
-        但其实,远不止十六位。<br>
-        <em>你心里那一位,也许我还没遇见。<br>评论告诉我,下一版我去把她找出来。</em>
-      </p>
-      <div class="brand-foot">HERTI · 她的人格地图</div>
+      <p class="footer-quote">${t("ui.result.footerQuote", []).join("<br>")}</p>
+      <p class="share-hint">${t("ui.result.shareHint", []).join("<br>")}</p>
+      <button class="restart-btn" onclick="restart()">${t("ui.result.restart")}</button>
+      <p class="nominate">${t("ui.result.nominate", []).join("<br>")}<br><em>${t("ui.result.nominateEm", []).join("<br>")}</em></p>
+      <div class="brand-foot">${t("ui.result.brandFoot")}</div>
       ${getPageCreditsHtml()}
     </div>
   `;
 
-  document.getElementById('result').innerHTML = html;
+  document.getElementById("result").innerHTML = html;
   window.scrollTo(0, 0);
 }
 
 function restart() {
-  document.getElementById('result').classList.remove('active');
-  document.getElementById('cover').style.display = 'flex';
+  document.getElementById("result").classList.remove("active");
+  document.getElementById("loading").classList.remove("active");
+  document.getElementById("quiz").classList.remove("active");
+  document.getElementById("cover").style.display = "flex";
   window.scrollTo(0, 0);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const mount = document.getElementById('coverCreditsMount');
-  if (mount) mount.innerHTML = getPageCreditsHtml();
+async function switchLanguage(localeCode) {
+  await window.HERTI_I18N.setLocale(localeCode);
+  buildDataFromLocale();
+  applyLocalizedStaticText();
+
+  if (document.getElementById("result").classList.contains("active") && latestResult) {
+    renderResult(latestResult);
+  } else if (document.getElementById("quiz").classList.contains("active")) {
+    renderQuestion();
+  }
+}
+
+document.addEventListener("click", (evt) => {
+  const btn = evt.target.closest(".lang-btn");
+  if (!btn) return;
+  switchLanguage(btn.dataset.lang);
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const locale = window.HERTI_I18N.detectLocale();
+  await window.HERTI_I18N.setLocale(locale);
+  buildDataFromLocale();
+  applyLocalizedStaticText();
 });

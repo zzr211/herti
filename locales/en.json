@@ -1,0 +1,651 @@
+{
+  "ui": {
+    "langLabel": "Language",
+    "languages": [
+      {
+        "code": "zh-Hans",
+        "label": "中文"
+      },
+      {
+        "code": "en",
+        "label": "English"
+      },
+      {
+        "code": "ja",
+        "label": "日本語"
+      },
+      {
+        "code": "ko",
+        "label": "한국어"
+      }
+    ],
+    "title": "HERTI · Her Personality Map",
+    "cover": {
+      "sub": "— a literary personality map —",
+      "cnTitle": "H E R   P E R S O N A L I T Y   M A P",
+      "tagline": [
+        "History hid them,",
+        "but a fragment inside your soul",
+        "vibrates at her frequency."
+      ],
+      "meta": "16 women · 20 questions · about 5 min",
+      "start": "START TEST",
+      "hint": "Open this in a quiet moment"
+    },
+    "quiz": {
+      "questionPrefix": "Question ",
+      "back": "← Previous",
+      "footer": "HERTI"
+    },
+    "loading": {
+      "text": [
+        "Searching for the one",
+        "who resonates with you..."
+      ]
+    },
+    "result": {
+      "heroLabel": "Your personality type is",
+      "sectionLabel": "Persona",
+      "soulLabel": "Soul Origin",
+      "mirrorLabel": "your mirror",
+      "oppositeLabel": "your opposite",
+      "footerQuote": [
+        "History hid them,",
+        "but a fragment inside your soul",
+        "vibrates at her frequency."
+      ],
+      "shareHint": [
+        "Share your personality card,",
+        "and let another her",
+        "meet you through your feed."
+      ],
+      "restart": "RESTART",
+      "nominate": [
+        "There are sixteen of them.",
+        "But truly, far more than sixteen."
+      ],
+      "nominateEm": [
+        "The one in your heart may not be here yet.",
+        "Tell me, and I will look for her in the next edition."
+      ],
+      "brandFoot": "HERTI · Her Personality Map"
+    },
+    "credits": {
+      "source": "Concept and presentation originate from herti.us. All rights belong to the original author and source site. This copy is for personal study and archiving.",
+      "maint": "Maintained by"
+    }
+  },
+  "personas": {
+    "WAVE": {
+      "cn": "wave",
+      "enName": "Virginia Woolf",
+      "cnName": "弗吉尼亚·伍尔夫",
+      "source": "from The Waves, 1931",
+      "epigraph": "\"I need a room of my own, <br> and the right not to be disturbed by anyone.\"",
+      "persona": [
+        "You are the kind of girl who would rather eat alone than chat with someone you don't want to see. There is a complete universe within you that does not need to be verified by anyone.",
+        "You look quiet, but you are not docile. You just use all your energy to guard that room - don't let outside sounds come in, don't let other people's expectations come in, don't let any \"you should\" come in.",
+        "Your biggest fear is not being alone, but being interrupted."
+      ],
+      "tags": [
+        "Prioritize solitude",
+        "inner universe",
+        "Strong sense of boundaries",
+        "Deep love is rare"
+      ],
+      "soul": [
+        "In 1929, she wrote \"A Room of One's Own\", telling all women: <strong> You need money and a room of your own to write and be yourself. </strong>",
+        "She wrote \"Waves\" - six voices alternately monologue on the beach, like the rise and fall of the tide, like the structure of consciousness itself.",
+        "In March 1941, she filled her pockets with stones and walked into the River Ouse. She is WAVE. She is a slut. She is every woman who needs a room of her own to survive."
+      ]
+    },
+    "DESO": {
+      "cn": "Precocious wisdom",
+      "enName": "Eileen Chang",
+      "cnName": "张爱玲",
+      "source": "\"You have to become famous early.\" — Zhang Ailing, 1944",
+      "epigraph": "\"You should be famous as early as possible. If <br> comes too late, <br> happiness will not be that great.\"",
+      "persona": [
+        "You are the kind of girl who sees through the adult world at a very young age. At the age when others still believe in fairy tales, you already know how to write the four words \"ridden with holes\".",
+        "Your tenderness is cold, your sobriety is lonely. You are very good at judging people, but you never point them out - because you have long known that there are some things that are useless to say.",
+        "Your greatest grace is that you never explain. Your greatest sadness is that no one needs you to explain."
+      ],
+      "tags": [
+        "watch with cold eyes",
+        "decent alienation",
+        "Already understood",
+        "turn around gracefully"
+      ],
+      "soul": [
+        "Zhang Ailing became famous in Shanghai at the age of 23. She was only 23 years old when she wrote \"<strong>Become famous early</strong>\", but every sentence she wrote was written by a 60-year-old.",
+        "She left China at the age of 28 and died alone in her apartment in Los Angeles at the age of 75. When she was discovered, she was surrounded only by sentences she had written.",
+        "\"<strong> is compassionate because of understanding. </strong>\" - these eight words are the summary of all her feelings. She never cried, she just saw it all, wrote it down, and continued eating.",
+        "She is DESO. She is precocious—the kind of girl who can see her father, her stepmother, and the whole world clearly at the age of seven. Precocious wisdom is a curse: it makes you know much more than your peers, and it also makes you much lonelier than your peers. But you don't complain, you just write about it."
+      ]
+    },
+    "PRID": {
+      "cn": "arrogant",
+      "enName": "Jane Austen",
+      "cnName": "简·奥斯汀",
+      "source": "from Pride and Prejudice, 1813",
+      "epigraph": "\"Any wealthy bachelor <br> must want to marry a wife.\"",
+      "persona": [
+        "You are the kind of girl who sees through everyone in a room where everyone is acting but doesn't expose them. Your weapon is not anger, it is irony.",
+        "You firmly believe that \"a happy ending is worth it\", but your happy ending must be established after you see everything clearly.",
+        "You are gentle, but you are by no means naive. You are romantic, but you are never confused."
+      ],
+      "tags": [
+        "cold sarcasm",
+        "sober romance",
+        "order and tact",
+        "the dignity of celibacy"
+      ],
+      "soul": [
+        "Austen never married and wrote \"Pride and Prejudice\", \"Sense and Sensibility\" and \"Emma\" in a small living room in the countryside of Hampshire.",
+        "She never writes about wars, never about colonies, she only writes about living rooms, balls, and men who think they are smart - and then <strong> uses irony to dissect the entire patriarchal marriage market </strong>.",
+        "She lived for 41 years and left behind 6 novels, rewriting the possibilities of all subsequent female writing. She is PRID. She is arrogant - sober, intellectual, and unyielding arrogance."
+      ]
+    },
+    "BLUE": {
+      "cn": "the bluest eye",
+      "enName": "Toni Morrison",
+      "cnName": "托妮·莫里森",
+      "source": "from The Bluest Eye, 1970",
+      "epigraph": "\"If a person longs to be someone else, <br> she has been stolen.\"",
+      "persona": [
+        "You're the kind of girl who always remembers \"there's someone who hasn't been heard.\" Your power is not to fight for yourself, but to turn those who don't have a voice into people with a voice.",
+        "You are gentle, but your gentleness has weight. You are willing to stop for others, but you are never stepped down.",
+        "You believe: Telling a story can sometimes really change the world."
+      ],
+      "tags": [
+        "Others take precedence",
+        "epic tenderness",
+        "Give voice to the voiceless",
+        "people who remember"
+      ],
+      "soul": [
+        "Toni Morrison is the first African-American woman to win the Nobel Prize in Literature. Her writing has only one goal: to carve the souls of black women who have \"never been written about\" into the center of literature. </strong>",
+        "She once said: \"If you want to read a book, but that book has not been written, then you must write it.\"",
+        "She doesn't write for herself. She is BLUE. She has the bluest eyes - all those girls who were told \"you're not enough\" can find their way home in her."
+      ]
+    },
+    "RAVI": {
+      "cn": "calamity",
+      "enName": "Marguerite Duras",
+      "cnName": "玛格丽特·杜拉斯",
+      "source": "from Le Ravissement de Lol V. Stein, 1964",
+      "epigraph": "\"Compared with your face when you were young, <br> I love your battered face now more.\"",
+      "persona": [
+        "You are the kind of girl who mixes desire, wetness, pain, and memory. Your love is not gentle, it is devouring.",
+        "There is always a humidity in your room, an emotion that has no name. You don't explain it, you just get caught up in it.",
+        "What you most resemble is not a person, but a long rain."
+      ],
+      "tags": [
+        "wet desire",
+        "memory vortex",
+        "Devouring love",
+        "cannot be named"
+      ],
+      "soul": [
+        "Duras was 70 years old when he wrote The Lover. She wrote about the Chinese man she met on a ferry on the Mekong River when she was 15 years old.",
+        "Her entire literary universe is humid, tropical, lustful, and destructive - <strong> She does not write about \"love\", she writes about \"the state of being seized by love, destroyed by love, and still remembered after being destroyed.\" </strong>",
+        "There is a word in French called ravissement, which means \"to be taken away\" and also \"to be in a trance\". She is RAVI. She was the woman who was taken away, lost, never to return."
+      ]
+    },
+    "RADI": {
+      "cn": "radium",
+      "enName": "Marie Curie",
+      "cnName": "玛丽·居里",
+      "source": "Radium, the element she discovered",
+      "epigraph": "\"In life, <br> there is nothing to be afraid of, <br> only what needs to be understood.\"",
+      "persona": [
+        "You are the kind of girl who believes that \"if you work hard to the extreme, the world will definitely make way\". Your discipline is your romance.",
+        "You are gentle, but you are by no means weak. You are willing to sacrifice your health, sleep and life for something you believe in.",
+        "You don't need to be taken care of, what you need is someone willing to walk side by side with you until dawn."
+      ],
+      "tags": [
+        "Ultimate discipline",
+        "rational romance",
+        "people side by side",
+        "Pay for the truth"
+      ],
+      "soul": [
+        "Marie Curie was the first woman to win the Nobel Prize and the only person to win the Nobel Prize in two different scientific fields (physics and chemistry).",
+        "She discovered radium, an element that glowed with faint blue light - <strong> was as beautiful as a miracle, and eventually slowly killed her. </strong>Her fingers were burned due to long-term exposure to radioactive substances.",
+        "She refused to apply for a patent for radium because she said \"science belongs to all mankind.\" She is RADI. She is radium. She is the kind of woman who believes in truth above herself."
+      ]
+    },
+    "ADAL": {
+      "cn": "composer",
+      "enName": "Ada Lovelace",
+      "cnName": "阿达·洛芙莱斯",
+      "source": "the first computer algorithm, 1843",
+      "epigraph": "\"Imagination is the faculty of discovery. <br> It penetrates the unseen world.\"",
+      "persona": [
+        "You are the kind of girl who, when everyone is talking about \"now\", you have already seen a hundred years from now. You have a picture in your head that no one else has.",
+        "You are not cold, you just believe in accurate poetry - a clean code, a perfect proof, something you thought of and proven by time, is your love poem.",
+        "Your greatest loneliness is that no one can keep up with your pace. But you know there will be people in the future."
+      ],
+      "tags": [
+        "ahead of time",
+        "poetic precision",
+        "triumph of imagination",
+        "future people"
+      ],
+      "soul": [
+        "In 1843, a hundred years before computers were invented, Ada Lovelace wrote the world's first computer algorithm.",
+        "She predicted that machines would one day be able to compose music, process symbols, and do things far beyond mathematics. She called this knowledge \"<strong>poetic science</strong>\".",
+        "She died at 36, and everyone thought she was crazy. A hundred years later, people realized that everything she said was right. She is ADAL. She is a composer - someone who writes not only for algorithms but also for the future. She is the ancestor of all girls \"born before their time.\""
+      ]
+    },
+    "EMMY": {
+      "cn": "Amy",
+      "enName": "Emmy Noether",
+      "cnName": "艾米·诺特",
+      "source": "Noether's theory, 1915",
+      "epigraph": "\"In the temple of mathematics, <br>she is the greatest woman allowed.\"<br> - Einstein",
+      "persona": [
+        "You're the kind of girl who can sit down and focus for six hours without looking up. There is a symmetry, order, and beauty in your world that others cannot see.",
+        "You don't care about honor, you don't care about being remembered, what you care about is \"whether the thing itself is true, right, and beautiful.\"",
+        "You are so gentle that people almost forget how sharp you are."
+      ],
+      "tags": [
+        "The beauty of abstraction",
+        "pure focus",
+        "underrated genius",
+        "nameless devotion"
+      ],
+      "soul": [
+        "Amy Noether was one of the most important mathematicians of the 20th century. Einstein said: \"In the temple of mathematics, she is the greatest female genius allowed.\"",
+        "Her \"<strong> Noether's theorem</strong>\" - which proves that \"symmetry\" and \"conservation law\" are two sides of the same thing - is the foundation of the entire modern physics.",
+        "But she has no formal professor title for life because she is a woman. She taught for free in Göttingen for many years and died in the United States after being deported by the Nazis. She is EMMY. She is one of those women who \"did something real but were reluctantly remembered by history.\""
+      ]
+    },
+    "DEVI": {
+      "cn": "Transformer",
+      "enName": "Simone de Beauvoir",
+      "cnName": "西蒙娜·波伏娃",
+      "source": "from Le Deuxième Sexe, 1949",
+      "epigraph": "\"A woman is not born, she becomes.\"",
+      "persona": [
+        "You are the kind of girl who would suddenly stop for an injustice while walking down the street. You don't just \"think\", you \"do\".",
+        "You believe that thought and action should be one and the same - that every sentence you write must stand up and walk.",
+        "Your love, your friendship, your career are all part of your \"becoming yourself\"."
+      ],
+      "tags": [
+        "wise man in action",
+        "cafe philosophy",
+        "writing for all women",
+        "Thought is life"
+      ],
+      "soul": [
+        "In 1949, Beauvoir wrote The Second Sex, the most important feminist text of the 20th century. Her sentence \"<strong>A woman is not born, she becomes </strong>\" changed the way all women view themselves overnight.",
+        "She and Sartre wrote all their lives in the Café de Flore in Paris, and she traveled all over the world, to the streets, and to factories. She is not just a philosopher, she is a woman who lives the word \"freedom\" with her whole being.",
+        "She is DEVI. She is a transformer - the kind of woman who believes, \"I am not born, I choose to be one day by day.\""
+      ]
+    },
+    "HANA": {
+      "cn": "thinker",
+      "enName": "Hannah Arendt",
+      "cnName": "汉娜·阿伦特",
+      "source": "from Eichmann in Jerusalem, 1963",
+      "epigraph": "\"The ability to think, <br> is the ability to resist.\"",
+      "persona": [
+        "You are the kind of girl who always wonders \"why\". You will not be included in any label, and you will not be asked to take sides by any camp.",
+        "Your sobriety is cold, but your coldness is to see more clearly - after seeing clearly, you will spend your whole life defending the truth you have seen.",
+        "Your greatest romance is to believe that a person's ability to think independently is resistance in itself."
+      ],
+      "tags": [
+        "independent thinking",
+        "refuse to take sides",
+        "See through mediocrity",
+        "pace around the room"
+      ],
+      "soul": [
+        "Hannah Arendt was one of the most important political philosophers of the 20th century. In her report on the Eichmann trial, she proposed \"<strong>banality of evil</strong>\" - telling us that the greatest evil often does not come from monsters, but from an ordinary person who does not think.",
+        "She was scolded for decades, but she never took back what she said. She said: \"The ability to think is the ability to resist.\"",
+        "She is HANA. She was the woman who was forever pacing the room, thinking out every word before saying it. She is the ancestor of all women who \"would rather think things through alone than shout slogans with anyone.\""
+      ]
+    },
+    "GAZE": {
+      "cn": "gaze",
+      "enName": "Susan Sontag",
+      "cnName": "苏珊·桑塔格",
+      "source": "from On Photography, 1977",
+      "epigraph": "\"Seriously existing, <br> is the greatest resistance of this era.\"",
+      "persona": [
+        "You are the kind of girl who redefines \"what is worthy of being taken seriously\" wherever you go. Your eyes are powerful and sometimes uncomfortable.",
+        "You don’t want to be represented by anyone, and you don’t want to represent anyone. You are only responsible for your own judgment.",
+        "Your love, your anger, your passion, all have weight - because you never pretend."
+      ],
+      "tags": [
+        "queen of intellect",
+        "sharp eyes",
+        "serious resistance",
+        "refuse to be represented"
+      ],
+      "soul": [
+        "Susan Sontag wrote \"On Photography\", \"On the Pain of Others\" and \"Metaphors of Illness\" - she cut through the images and lies of the entire 20th century with her eyes.",
+        "When she was in her 60s, she flew to war-torn Sarajevo alone, where she directed Waiting for Godot. <strong>She doesn't just write about other people's pain, she goes to other people's pain. </strong>",
+        "She said: \"Seriously existing is the greatest resistance of this era.\" She is GAZE. She is staring. She is one of those women who \"sees too clearly not to speak out.\""
+      ]
+    },
+    "VIVA": {
+      "cn": "Long live life",
+      "enName": "Frida Kahlo",
+      "cnName": "弗里达·卡罗",
+      "source": "her last painting: Viva la Vida, 1954",
+      "epigraph": "\"I paint self-portraits, <br> because I am often alone, and <br> because I am the person I know best.\"",
+      "persona": [
+        "You are the kind of girl who hangs the wound directly on your body and decorates it with the brightest colors. Your pain is real, and your life is real. There is no contradiction between these two things.",
+        "You are not elegant, you are not elegant, you just burn.",
+        "Your greatest strength is never pretending that you don't feel pain. But you never let the pain turn you into a little person."
+      ],
+      "tags": [
+        "The body is the canvas",
+        "turn the wound into a flower",
+        "woman under scorching sun",
+        "pain of straight ball"
+      ],
+      "soul": [
+        "Frida Kahlo was involved in a car accident when she was 18 years old, and a metal pole passed through her body. She lay in bed for a year and painted self-portraits for the rest of her life.",
+        "Her paintings are tropical and sensual, with flowers, animals, blood and tears - <strong> She turns all her pain into a kind of celebration. </strong>",
+        "Her last painting read \"Viva la Vida\" - long live life. Eight days after finishing the painting, she died. She is VIVA. She is long live life. She is the kind of woman who \"will burn even with her last breath\"."
+      ]
+    },
+    "INFI": {
+      "cn": "unlimited",
+      "enName": "Yayoi Kusama",
+      "cnName": "草间弥生",
+      "source": "Infinity Mirror Rooms",
+      "epigraph": "\"I turn illusions into dots, and <br> dots turn me into the universe.\"",
+      "persona": [
+        "You are the kind of girl who can make up an entire universe by yourself. Your spiritual world is infinitely extendable, and others will get lost after entering it.",
+        "You don't need to be understood, you just need to keep growing. You are like a plant, like a cell, like light - always multiplying, always repeating, always becoming something else.",
+        "Your greatest loneliness is that no one else’s spiritual universe in this world can accommodate you. But you've accepted it."
+      ],
+      "tags": [
+        "spiritual universe",
+        "unlimited proliferation",
+        "Illusion and Art",
+        "self-sufficient"
+      ],
+      "soul": [
+        "Yayoi Kusama suffered from severe visual hallucinations since she was a child, and the world she saw was always full of dots. She was not defeated by it, she turned it into art.",
+        "From 1977, she was voluntarily admitted to a mental hospital, but she went to the studio every day and continued to paint those dots, make those mirror houses, and turn the whole world into her language.",
+        "Now in her 90s, she is still creating. <strong>She is not trapped by mental illness, she turns mental illness into a cosmology. </strong>She is INFI. She is infinite. She is the woman who is \"a world unto herself\"."
+      ]
+    },
+    "LYRE": {
+      "cn": "lyre",
+      "enName": "Sappho",
+      "cnName": "萨福",
+      "source": "her lyre, 6th century BC",
+      "epigraph": "\"I said, <br>someone will remember us in the future.\"",
+      "persona": [
+        "You are the kind of girl who believes that love is more important than explanation. Your love is naked, warm, physical, and undisguised.",
+        "You don't have to defend who you love, you just love. You don't need to apologize for your happiness, you are just happy.",
+        "Your greatest wisdom is knowing that some things don't need to be theorized - they just need to be lived."
+      ],
+      "tags": [
+        "Eros poet",
+        "body truth",
+        "unexplained love",
+        "gentle rebellion"
+      ],
+      "soul": [
+        "Sappho lived on the island of Lesbos in the 6th century BC. She wrote lyric poems, she loved women, she ran poetry schools, and she was called \"<strong> the tenth muse</strong>\" by Plato.",
+        "Most of her poems have been lost, and we only have a few fragments left - but these fragments alone are enough for women 2,500 years later to recognize her, love her, and want to be her.",
+        "She said: \"I said, someone will remember us in the future.\" - This sentence itself became a prophecy. She is LYRE. She is the lyre. She is the ancestor of all women who \"justify love with love itself\"."
+      ]
+    },
+    "LAMP": {
+      "cn": "oil lamp",
+      "enName": "Lin Huiyin",
+      "cnName": "林徽因",
+      "source": "her oil lamp in Lizhuang, 1940s",
+      "epigraph": "\"You are April in the world, <br> your laughter lights up the surrounding wind.\"",
+      "persona": [
+        "You are the kind of girl who can still write poetry in the most difficult circumstances. Your gentleness is not soft, it is a kind of strength that says \"I have done everything, but I can also write poetry.\"",
+        "You take care of others, and you are taken care of by others - but the deepest part of you belongs only to yourself.",
+        "Your most beautiful moment is when no one is watching, when you are drawing, writing, and thinking about things by yourself under an oil lamp."
+      ],
+      "tags": [
+        "multiple identities",
+        "Elegance in the chaos of war",
+        "gentle intelligence",
+        "woman under lamp"
+      ],
+      "soul": [
+        "Lin Huiyin is the first generation of female architects in China and one of the most famous Chinese female poets in the 20th century.",
+        "During the Anti-Japanese War, she and Liang Sicheng continued to survey, map and protect China's ancient buildings in a broken house in Lizhuang, Sichuan, despite being seriously ill and hungry. <strong> At that time, she was writing \"You Are April in the World\" - writing poems while vomiting blood. </strong>",
+        "She is not a \"vase\", she is a person who has spent her whole life proving that \"women can be scientists, artists, mothers, and lovers at the same time.\" She is a LAMP. She is the oil lamp that refuses to be extinguished in Li Zhuang."
+      ]
+    },
+    "BELL": {
+      "cn": "bell jar",
+      "enName": "Sylvia Plath",
+      "cnName": "西尔维娅·普拉斯",
+      "source": "from The Bell Jar, 1963",
+      "epigraph": "\"I closed my eyes, <br> the whole world fell down. <br> I opened my eyes, <br> everything reappeared.\"",
+      "persona": [
+        "You're the kind of girl who's so smart that it's almost a disease. You see more things than others, you feel things more deeply than others, and it is harder for you to live than others.",
+        "Your mind is like a bell jar, separating you from the world. You want to go out, but you want to stay in.",
+        "Your greatest poem was written on the day you most wanted to disappear."
+      ],
+      "tags": [
+        "Genius and pain",
+        "bell jar",
+        "Dig inward",
+        "burning poem"
+      ],
+      "soul": [
+        "Plath committed suicide at the age of 30, leaving behind two children, a novel called The Bell Jar, and Ariel, which would become the most important poetry collection of the 20th century.",
+        "Her poems are confessional, saying all \"what women should not say\" - the collapse of motherhood, the suffocation of marriage, the complexity of her father, and the violence against herself. <strong> She writes it down, and then she no longer has to live. </strong>",
+        "She is not a loser. She is a person who writes out all the words that women are suppressed at once. She is BELL. She is the bell jar—and the loudest sound from the bell jar."
+      ]
+    }
+  },
+  "questions": [
+    {
+      "section": "everyday you",
+      "q": "On weekend mornings, when you open your eyes, the first thing you want to do is -",
+      "options": [
+        "Continue to lie down, not wanting to do anything, and let the sun slowly climb up the wall",
+        "Get up immediately, make coffee, play music, and give your day a ritual start",
+        "Pick up your phone and take a look at what happened in the world in the past eight hours",
+        "Close your eyes and think for a while, retell last night's dream in your mind, and make sure you haven't forgotten some things."
+      ]
+    },
+    {
+      "section": "everyday you",
+      "q": "How do you deal with a friend dragging you to a party that you don’t really want to go to?",
+      "options": [
+        "Find a reason to put yourself at ease and decline, then stay at home and feel that the world is finally quiet.",
+        "Go, but sit in the corner the whole time, treating it as a field trip to observe the world.",
+        "Went and had a great time unexpectedly. You are more lively than you thought.",
+        "Don’t go, and clearly tell your friends “I don’t want to socialize right now” without explanation or guilt."
+      ]
+    },
+    {
+      "section": "everyday you",
+      "q": "When a friend sends a message in the middle of the night saying she is sad, your first reaction is -",
+      "options": [
+        "Call her immediately and talk to her until she falls asleep",
+        "Reply to her seriously, tell her you heard her, and then ask her out for dinner tomorrow morning",
+        "Don’t know what to say, but you’ll keep staring at that message, typing and deleting it over and over again",
+        "Forward a song to her, you know she understands"
+      ]
+    },
+    {
+      "section": "everyday you",
+      "q": "A period of completely alone time, what do you most want to do with it -",
+      "options": [
+        "Watch an old movie you've seen three times but still want to watch again",
+        "Clean up the room and put everything back where it belongs",
+        "Write something, not to post it, just to find out what you have been thinking about recently",
+        "Do nothing, sit by the window and let yourself slowly become empty"
+      ]
+    },
+    {
+      "section": "everyday you",
+      "q": "When you receive a gift that you don't like very much, your first reaction is -",
+      "options": [
+        "It’s better to say thank you sincerely, because you see the other person’s intention, even though the thing is really not your cup of tea",
+        "Seriously say \"Wow, it's so special\", then put it away and give it away or hang it up later.",
+        "Just say \"Hey, this is not really my style, but I'm glad you are willing to give it to me.\"",
+        "You immediately start to wonder if this person really knows you, even though you won’t say it out loud."
+      ]
+    },
+    {
+      "section": "everyday you",
+      "q": "Your most ideal working/study status is——",
+      "options": [
+        "In an absolutely quiet room, no one will suddenly push the door in, and you can work for six consecutive hours without interruption.",
+        "A sunny cafe, surrounded by strangers' voices, but no one knows you",
+        "In a team, someone can discuss it at any time, and your ideas will become clearer through collisions with others.",
+        "A completely chaotic environment, with books piled on the floor and papers flying everywhere, but you know which one is where"
+      ]
+    },
+    {
+      "section": "everyday you",
+      "q": "In a friend group, you are often -",
+      "options": [
+        "The quietest one, but everyone knows you hear everything",
+        "If it weren't for you, the person who organized everything, we might not have gotten together at all.",
+        "The person who suddenly says something that makes everyone silent for two seconds",
+        "The person who puts his own footnote next to everyone's story"
+      ]
+    },
+    {
+      "section": "You in crisis",
+      "q": "If someone you love misunderstands you, your first reaction is——",
+      "options": [
+        "Don't explain a word, turn around and leave, you think he should be able to understand, if he really loves you",
+        "Try your best to explain and lay out all the details. Only when he nods can you cry with confidence.",
+        "You were stunned, your mind was exploding, but you knew you would write it down later",
+        "You calmly analyze why he misunderstood so much, and then you find that this misunderstanding is more worthy of thinking than the misunderstanding itself."
+      ]
+    },
+    {
+      "section": "You in crisis",
+      "q": "When you see something obviously unfair, what you want to do most is——",
+      "options": [
+        "Speak up immediately, even if you know it will cost you something",
+        "Keep it in mind, then express it in other ways in your writing/work",
+        "Find the person who was hurt, walk over silently, and stay with her, no need to speak",
+        "Turn it into a concrete question you'll never forget for the rest of your life: Why is this happening?"
+      ]
+    },
+    {
+      "section": "You in crisis",
+      "q": "What you are most afraid of losing in your life is actually——",
+      "options": [
+        "That person who can understand you - as long as there is one, you can still live",
+        "Your own sobriety - rather than being deceived, you are more afraid that one day you will even deceive yourself",
+        "Your room - the place where no one can come in and disturb you",
+        "That feeling of \"you can still start\" - as long as you can start something new, everything is not over yet"
+      ]
+    },
+    {
+      "section": "You in crisis",
+      "q": "An important relationship can never be restored. The most common way you use it is——",
+      "options": [
+        "It may take a long time to digest it quietly alone, but you don't want anyone to accompany you through this period.",
+        "Jump right into the next thing, work, travel, new people, you can’t stop anyway",
+        "Write it down repeatedly, in your diary, in the chat box, and in your heart, until that person becomes a literary image.",
+        "Turn it into a new perspective for you to see the world - from now on, you will see any love with an extra layer"
+      ]
+    },
+    {
+      "section": "You in crisis",
+      "q": "When you are most tired, what you really want is -",
+      "options": [
+        "A hug that doesn’t require any explanation. The other person doesn’t ask anything, they just hold you.",
+        "A cup of hot stuff, a quiet corner, not to be found by anyone for half an hour",
+        "A small thing that you can focus on - folding clothes, washing dishes, organizing your desk - will keep your hands busy and your brain will not hurt.",
+        "A piece of clean code, or a math problem, or a piece of data to be sorted out - let your mind have something to \"calculate clearly\""
+      ]
+    },
+    {
+      "section": "You in crisis",
+      "q": "That corner of your heart that \"no one can truly understand\" pretends to be——",
+      "options": [
+        "A thought you once thought but would never tell anyone",
+        "A sadness that has no name since you were little, it's always there, for no reason",
+        "A kind of doubt you have about yourself - you are afraid that you are not as smart, as deep, and as good as you think you are.",
+        "A person you have given up on long ago. You think you have given up, but sometimes you still suddenly think of it."
+      ]
+    },
+    {
+      "section": "You in crisis",
+      "q": "After real pain occurs, your first action is usually -",
+      "options": [
+        "Find someone you trust immediately and tell it completely - it doesn't really happen until you say it",
+        "Let your body move first, running, walking, cleaning the room",
+        "Take a step back and look at it, knowing that it's just a flurry of emotion and it will pass - you don't explain or struggle, you just wait for it to go away",
+        "Turn it into an article, a thought, a theory - you don't allow it to happen in vain"
+      ]
+    },
+    {
+      "section": "poetic you",
+      "q": "If you were a voice, what would you most resemble—",
+      "options": [
+        "The bass of the waves crashing against the rocks, over and over again, hypnotizes and engulfs people.",
+        "A string that suddenly breaks makes the loudest sound at the least appropriate moment",
+        "The high-frequency buzzing of instruments in the laboratory late at night, lonely, precise, someone is measuring something",
+        "Someone is crying in the next room. You can't hear it clearly. You can only hear wet, muffled sobs."
+      ]
+    },
+    {
+      "section": "poetic you",
+      "q": "If you were a kind of light, you would be most like -",
+      "options": [
+        "In the chaos of war, an oil lamp refused to be extinguished, illuminating the drawings and the bombing in the distance.",
+        "The white light reflected from the iron roof under the scorching sun makes people unable to open their eyes, but they are still alive.",
+        "The last ray of orange seeping into the cracks in the curtains at dusk, the last bit of warmth in the day, and the last bit of possibility",
+        "At four o'clock in the morning, the fluorescent lights in the convenience store are all alone, and the light above your head is buzzing."
+      ]
+    },
+    {
+      "section": "poetic you",
+      "q": "If your spiritual world is a space, it is most like——",
+      "options": [
+        "An infinite room of mirrors, countless you are repeating the same action, and you can no longer tell which one is real.",
+        "A neat living room, with the tea sets laid out and the sofa in place, everyone who comes in will be included in your next novel.",
+        "On the second floor of the street-facing cafe, you can walk through the entire 20th century downstairs and you won’t miss anything.",
+        "In an olive grove by the Aegean Sea, light falls from the leaves. You are writing a poem, and the person you love is lying next to you."
+      ]
+    },
+    {
+      "section": "poetic you",
+      "q": "At what moment do you most want to be remembered by a strange girl——",
+      "options": [
+        "When she was flipping through an old book, there was a line that made her close the book and sit there for a long time.",
+        "When she solved a problem, that moment that suddenly lit up was once yours",
+        "The first time she dared to say \"no\", she learned it from you, even though she thought she figured it out on her own.",
+        "When she deletes a message in the middle of the night, she finally no longer needs that person's reply, and you are her silent ally."
+      ]
+    },
+    {
+      "section": "poetic you",
+      "q": "A hundred years from now, if someone thinks of you, what you most want them to remember is -",
+      "options": [
+        "A sentence you once wrote, she didn’t know who the author was until her death, but that sentence saved her",
+        "A house you drew, she wouldn't notice it when she walked past it, but at that moment she was safe",
+        "A paragraph of words you printed in the textbook, she hates that class, but a few years later, at a certain low point, she will suddenly think of it",
+        "One line of code that you figured out, her entire life is built on it, but she won't know it's you"
+      ]
+    },
+    {
+      "section": "poetic you",
+      "q": "If you could only use one verb to describe yourself, what would you choose?",
+      "options": [
+        "sink, like a stone sinking slowly in water",
+        "Burn, like a match that no one has lit but keeps burning",
+        "Think, like a person who is always pacing back and forth in the room",
+        "Proliferate, like a cell. I don’t know why, I just know that it keeps increasing."
+      ]
+    }
+  ]
+}
