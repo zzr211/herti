@@ -39,13 +39,10 @@ function buildDataFromLocale() {
 }
 
 function getPageCreditsHtml() {
-  const xhs = "https://www.xiaohongshu.com/user/profile/607e40270000000001001849";
-  const source = t("ui.credits.source");
   const maint = t("ui.credits.maint");
   return `
     <div class="page-credits">
-      <p>${source.replace("herti.us", '<a href="https://herti.us/" target="_blank" rel="noopener noreferrer">herti.us</a>')}</p>
-      <p class="page-credits-maint">${maint} · <a href="https://space.bilibili.com/435242714" target="_blank" rel="noopener noreferrer" title="哔哩哔哩">哔哩哔哩 · 清心寡欲哆啦道人</a> · <a href="${xhs}" target="_blank" rel="noopener noreferrer" title="小红书">小红书 · Dreammaker</a> · 公众号「千秋万事」 · <a href="https://sbtihub.pages.dev/" target="_blank" rel="noopener noreferrer" title="书签与导航">sbtihub.pages.dev</a></p>
+      <p class="page-credits-maint">${maint} · <a href="https://qqwsh.top" target="_blank" rel="noopener noreferrer" title="主站">qqwsh.top</a> · <a href="https://tihub.qqwsh.top" target="_blank" rel="noopener noreferrer" title="导航站">tihub.qqwsh.top</a> · <a href="https://x.com/ying_zhiwei" target="_blank" rel="noopener noreferrer" title="X / Twitter">推特 · 嬴知微 @ying_zhiwei</a></p>
     </div>
   `;
 }
