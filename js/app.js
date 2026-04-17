@@ -70,6 +70,9 @@ function applyLocalizedStaticText() {
   document.getElementById("loadingText").innerHTML = t("ui.loading.text", []).join("<br>");
   document.getElementById("coverCreditsMount").innerHTML = getPageCreditsHtml();
   renderLanguageSwitcher();
+  if (window.HERTI_SEO && typeof window.HERTI_SEO.apply === "function") {
+    window.HERTI_SEO.apply();
+  }
 }
 
 function startQuiz() {

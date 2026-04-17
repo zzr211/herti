@@ -1,0 +1,73 @@
+# https://www.robotstxt.org/
+User-agent: *
+Allow: /
+
+# Generative / AI 爬虫（允许多数 GEO 场景下的摘要与引用；若你希望限制训练用途请改为 Disallow）
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# 中国大语言模型生态常见爬虫标识（GEO；厂商可能更新 UA；与「通义 / 文心 / Kimi / DeepSeek / 智谱 / 豆包」等产品检索相关）
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: DeepseekBot
+Allow: /
+
+User-agent: ChatGLM-Spider
+Allow: /
+
+User-agent: Qwenbot
+Allow: /
+
+User-agent: Kimibot
+Allow: /
+
+User-agent: KimiCrawler
+Allow: /
+
+User-agent: MoonshotBot
+Allow: /
+
+User-agent: Moonshot-AI
+Allow: /
+
+User-agent: Doubao
+Allow: /
+
+User-agent: Hunyuan
+Allow: /
+
+User-agent: YiBot
+Allow: /
+
+User-agent: InternLMBot
+Allow: /
+
+User-agent: MiniMaxBot
+Allow: /
+
+Sitemap: https://herti.qqwsh.top/sitemap.xml

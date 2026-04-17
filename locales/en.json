@@ -32,6 +32,10 @@
       }
     ],
     "title": "HERTI · Her Personality Map",
+    "seo": {
+      "description": "HERTI (Her Personality Map) is a free literary personality quiz in the browser. It borrows MBTI-style (Myers–Briggs Type Indicator) self-report framing and mapping ideas, but matches you to 16 literary–historical women—not the official MBTI® instrument by CPP, nor the 16 MBTI types. Twenty questions in about five minutes; no account; answers stay on your device. UI in Chinese, English, Japanese, Korean, Russian, French, and Spanish.",
+      "keywords": "HERTI,Her Personality Map,MBTI,Myers-Briggs,personality type test,personality quiz,literary quiz,women in history,persona test,qqwsh"
+    },
     "cover": {
       "sub": "— a literary personality map —",
       "cnTitle": "H E R   P E R S O N A L I T Y   M A P",

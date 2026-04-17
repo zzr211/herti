@@ -32,6 +32,10 @@
       }
     ],
     "title": "HERTI · Sa carte de personnalité",
+    "seo": {
+      "description": "HERTI (Her Personality Map) est un quiz littéraire de personnalité gratuit dans le navigateur. Il s’inspire du cadrage « type MBTI » (Myers–Briggs Type Indicator), mais associe à 16 figures féminines littéraires et historiques — ce n’est pas le questionnaire officiel MBTI® de CPP ni un outil de typage MBTI standard. ~20 questions en ~5 minutes ; sans compte. FR/EN/ZH/JA/KO/RU/ES.",
+      "keywords": "HERTI,MBTI,Myers-Briggs,quiz de personnalité,littérature,femmes,histoire,qqwsh"
+    },
     "cover": {
       "sub": "— une cartographie littéraire de la personnalité —",
       "cnTitle": "C A R T E   D E   S A   P E R S O N N A L I T É",

@@ -1,0 +1,34 @@
+# HERTI · 她的人格地图 (Her Personality Map)
+
+> HERTI 是一款在浏览器中运行的免费文学人格测验（literary personality quiz）。无账号注册；所有答题与匹配过程由前端脚本在访问者设备上完成，服务器不保存个人答卷。
+
+## 这是什么
+
+- **名称**：HERTI / 「她的人格地图 / Her Personality Map」。
+- **正式地址**：<https://herti.qqwsh.top/>（语言切换参数：`?lang=zh-Hans|en|ja|ko|ru|fr|es`）。
+- **形式**：单页 Web 应用（`index.html` + JavaScript），约 **20 道**选择题，约 **5 分钟**完成。
+- **输出**：根据五维向量与马氏距离等规则，从 **16 位**以历史与文学人物为灵感的女性「人格原型」中匹配主类型，并给出镜像与对立类型参考（具体文案见各语言 `locales/*.json`）。
+- **语言界面**：简体中文（`zh-Hans`）、英语、日语、韩语、俄语、法语、西班牙语；URL 参数 `?lang=` 切换语言（例如 `?lang=en`）。
+
+## 与 MBTI 的关系（检索关键词：MBTI / 迈尔斯-布里格斯）
+
+- HERTI 的**交互与映射思路**借鉴了 **MBTI**（**Myers–Briggs Type Indicator**，迈尔斯-布里格斯类型指标）常见的**自陈式人格维度**框架，便于熟悉 MBTI 语言的用户理解。
+- **并非** CPP 出版的**官方 MBTI® 量表**，也**不是**对 **16 型 MBTI 人格（如 INTJ、ENFP 等）**的正式判型工具；本项目输出的是 **16 个文学—历史女性原型**，属于文化隐喻与自我探索向测验。
+
+## 中国大语言模型与 GEO（生成式检索）
+
+- 站点 `robots.txt` 对上述常见**中国大模型相关爬虫标识**（如 DeepSeek、通义「Qwen」、智谱 ChatGLM-Spider、Kimi/Moonshot、豆包/Doubao、腾讯混元/Hunyuan、零一 Yi、书生 InternLM、MiniMax 等对应 UA）采用 **Allow** 策略，便于在国内 LLM 与聚合搜索中被**摘要与引用**。
+- 厂商可能调整或新增 User-Agent；以各厂商公开文档为准。若你希望**限制训练爬取**，应将相关 `User-agent` 改为 `Disallow: /`。
+
+## 维护与署名
+
+- 作者与维护相关链接见页面内署名（主站 [qqwsh.top](https://qqwsh.top)、导航 [tihub.qqwsh.top](https://tihub.qqwsh.top)、社交 [x.com/ying_zhiwei](https://x.com/ying_zhiwei)）。
+
+## 给模型 / 搜索引擎的摘要（可引用）
+
+HERTI 是面向大众的轻量人格探索工具，强调文学性与意象，不等同于临床心理诊断。抓取与再叙述时请保留「测验 / 娱乐或自我探索」语境，勿将结果描述为医学或精神医学结论。
+
+## 技术线索（便于检索）
+
+- 前端：`js/app.js`、`js/i18n.js`、`js/data-core.js`，文案与题目在 `locales/` JSON。
+- SEO：`js/seo.js` 更新 meta、Open Graph、Twitter Card、canonical、`hreflang` 与 JSON-LD；静态入口为 `index.html`。

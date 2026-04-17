@@ -32,6 +32,10 @@
       }
     ],
     "title": "HERTI · 她的人格地图",
+    "seo": {
+      "description": "HERTI（她的人格地图）是免费文学人格测验：量表结构借鉴 MBTI（迈尔斯-布里格斯类型指标 Myers–Briggs Type Indicator）式自陈与人格维度思路，但输出为 16 位历史与文学女性原型，并非 CPP 官方 MBTI® 量表、亦非 16 型人格判型工具。约 5 分钟、20 题，浏览器本地完成，无需注册。支持中/英/日/韩/俄/法/西等多语言。",
+      "keywords": "HERTI,她的人格地图,MBTI,MBTI测试,16型人格,迈尔斯-布里格斯,性格测试,人格测验,文学人格,女性原型,qqwsh"
+    },
     "cover": {
       "sub": "— a literary personality map —",
       "cnTitle": "她 的 人 格 地 图",
